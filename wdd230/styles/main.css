@@ -1,0 +1,77 @@
+/* Color Palette: 
+ *   https://coolors.co/73683b-583e23-13262f-b0a084-e9e6ff 
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Roberto|Concert+One');
+
+#content {
+  color: #583E23;
+  font-family: Roberto, Arial, sans-serif;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+  color: #E9E6FF;
+}
+
+footer {
+  background-color: #13262F;
+  border-radius: 10px;
+  color: #E9E6FF;
+  font-size: 0.9em;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Concert One", Helvetica, sans-serif;
+}
+
+header {
+  background-color: #13262F;
+  border-radius: 10px;
+  color: #E9E6FF;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+  padding-top: 20px;
+}
+
+main {
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 100px;
+}
+
+.last-updated {
+  color: #B0A084;
+  font-size: 0.8em;
+}
+
+.profile {
+  float: right;
+  margin-right: 15px;
+}
+
+.profile img {
+  box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+}
+
+.title {
+  margin-bottom: -7px;
+}
+
+.title-underline {
+  margin-bottom: -10px;
+}
