@@ -20,11 +20,9 @@ footer a:active {
 
 footer {
   background-color: #13262F;
-  border-radius: 10px;
   color: #E9E6FF;
   font-size: 0.9em;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding: 10px 0 10px 0;
   text-align: center;
 }
 
@@ -39,33 +37,25 @@ h6 {
 
 header {
   background-color: #13262F;
-  border-radius: 10px;
   color: #E9E6FF;
-  font-size: 2.2em;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  padding-left: 100px;
-  padding-top: 20px;
+  text-align: center;
 }
 
-main {
-  margin-bottom: 30px;
-  margin-left: 10px;
-  margin-right: 100px;
+header h1 {
+  margin: 0 0 0 0;
+}
+
+main h2 {
+  font-size: 1.2em;
+}
+
+main ul {
+  padding-inline-start: 20px;
 }
 
 .last-updated {
   color: #B0A084;
   font-size: 0.8em;
-}
-
-.profile {
-  float: right;
-  margin-right: 15px;
-}
-
-.profile img {
-  box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
 }
 
 .title {

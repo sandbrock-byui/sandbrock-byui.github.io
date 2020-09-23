@@ -1,0 +1,37 @@
+@media only screen and (min-width: 32.5em) {
+  footer {
+    border-radius: 10px;
+  }
+
+  header {
+    border-radius: 10px;
+    padding: 10px 0 10px 100px;
+    text-align: left;
+  }
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  main {
+    margin: 0 100px 30px 10px;
+  }
+
+  main h2 {
+    font-size: 1.5em;
+  }
+  
+  main ul {
+    padding-inline-start: 40px;
+  }
+
+  .profile {
+    float: right;
+    margin: 5px 15px 0 0;
+  }  
+
+  .profile img {
+    box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+  }
+}
+
