@@ -63,7 +63,8 @@ ol {
  *********************/
 header {
   background-color: var(--header-background);
-  color: white;
+  border-bottom: 1px black solid;
+  color: white;  
 }
 
 h1 {
@@ -83,7 +84,7 @@ nav ul {
 
 nav ul li a {
   display: block;
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 0.50rem;
   text-decoration: none;
@@ -92,6 +93,10 @@ nav ul li a {
 
 nav a:hover {
   background-color: var(--nav-hover-background);
+  color: black;
+}
+
+nav a.nav-active:visited {
   color: black;
 }
 
@@ -106,6 +111,7 @@ nav a:hover {
  *********************/
 main {
   background-color: var(--main-background);
+  border-bottom: 1px black solid;
 }
 
 /*********************
@@ -178,7 +184,7 @@ section {
 
 .color-inactive-navigation {
   background-color: var(--nav-background);
-  color: #fff;
+  color: white;
 }
 
 /*********************
