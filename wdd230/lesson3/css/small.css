@@ -11,7 +11,7 @@
  * Body
  *********************/
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   max-width: 930px;
   margin: 0 auto;
 }
@@ -38,4 +38,15 @@ nav ul li a {
 nav a:hover {
   background-color: #bbb;
   color: #36454f;
+}
+
+/*********************
+ * Table
+ *********************/
+table {
+  border-collapse: collapse;
+}
+
+tr, td {
+  border: 1px solid black;
 }
