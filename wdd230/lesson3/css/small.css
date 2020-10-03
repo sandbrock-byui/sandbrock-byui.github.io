@@ -5,7 +5,7 @@
  *
  *********************/
 
- :root {
+:root {
   --color1: #394648;
   --color2: #69995d;
   --color3: #cbac88;
@@ -18,7 +18,7 @@
   --nav-background: var(--color1);
   --nav-hover-background: var(--color4);
   --main-background: var(--color3);
- }
+}
 
 /*********************
  * Body
@@ -29,11 +29,22 @@ body {
   margin: 0 auto;
 }
 
-h1, h2, h3, h4 {
+a, a:visited {
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
   color: var(--heading-text-color);
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
   padding: 0.5rem;
 }
@@ -142,6 +153,32 @@ section {
 
 .color5 {
   background-color: var(--color5);
+}
+
+.color-main-background {
+  font-weight: bold;
+}
+
+.color-header {
+  background-color: var(--header-background);
+  color: var(--heading-text-color);
+  font-weight: bold;
+}
+
+.color-headings {
+  color: var(--heading-text-color);
+  font-weight: bold;
+}
+
+.color-active-navigation {
+  background-color: var(--nav-active-background);
+  color: black;
+  font-weight: bold;
+}
+
+.color-inactive-navigation {
+  background-color: var(--nav-background);
+  color: #fff;
 }
 
 /*********************
