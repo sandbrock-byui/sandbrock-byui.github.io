@@ -1,10 +1,7 @@
 /*********************
  * Color Palette: 
- *   https://coolors.co/f08700-f49f0a-efca08-00a6a6-bbdef0
- *   https://coolors.co/f4f1de-e07a5f-3d405b-81b29a-f2cc8f
  *   https://coolors.co/0c1618-004643-faf4d3-d1ac00-f6be9a
- *   https://coolors.co/12130f-5b9279-8fcb9b-eae6e5-8f8073 (Nature)
- *   https://coolors.co/563635-5b6057-6e9075-78c091-81f0e5 (Forest)
+ *
  *********************/
 
 /*********************
@@ -16,10 +13,41 @@ body {
   margin: 0 auto;
 }
 
+h2, h3, h4 {
+  color: #004643;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+ol {
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
+
+.center {
+  text-align: center;
+}
+
+/*********************
+ * Header
+ *********************/
+header {
+  background-color: #004643;
+  color: #f6be9a;
+}
+
+h1 {
+  text-align: center;
+}
+
 /*********************
  * Navigation
  *********************/
 nav ul {
+  background-color: #0c1618;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -28,7 +56,7 @@ nav ul {
 
 nav ul li a {
   display: block;
-  /*color: #fff;*/
+  color: #fff;
   text-align: center;
   padding: 0.50rem;
   text-decoration: none;
@@ -36,17 +64,74 @@ nav ul li a {
 }
 
 nav a:hover {
-  background-color: #bbb;
-  color: #36454f;
+  background-color: #faf4d3;
+  color: black;
+}
+
+.nav-active {
+  background-color: #d1ac00;
+  color: black;
 }
 
 /*********************
- * Table
+ * Main
+ *********************/
+main {
+  background-color: #faf4d3;
+}
+
+/*********************
+ * Tables
  *********************/
 table {
   border-collapse: collapse;
+  margin: 0 auto;
+  padding: 7px;
 }
 
-tr, td {
+th {
+  color: #004643;
+}
+
+th,
+tr,
+td {
   border: 1px solid black;
+  padding: 7px;
+}
+
+section {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.color1 {
+  background-color: #0c1618;
+  color: white;
+}
+
+.color2 {
+  background-color: #004643;
+  color: white;
+}
+
+.color3 {
+  background-color: #faf4d3;
+}
+
+.color4 {
+  background-color: #d1ac00;
+}
+
+.color5 {
+  background-color: #f6be9a;
+}
+
+/*********************
+ * Footer
+ *********************/
+footer {
+  background-color: #004643;
+  color: #f6be9a;
+  text-align: center;
 }
