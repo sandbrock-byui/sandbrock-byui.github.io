@@ -13,7 +13,8 @@
   --color5: #f8e9e9;
 
   --header-background: var(--color1);
-  --heading-text-color: var(--color2);
+  --header-color: var(--color2);
+  --heading-text-color: black;
   --nav-active-background: var(--color3);
   --nav-background: var(--color1);
   --nav-hover-background: var(--color4);
@@ -67,7 +68,8 @@ header {
   color: white;  
 }
 
-h1 {
+header h1 {
+  color: var(--header-color);
   text-align: center;
 }
 
@@ -94,10 +96,12 @@ nav ul li a {
 nav a:hover {
   background-color: var(--nav-hover-background);
   color: black;
+  font-weight: bold;
 }
 
 nav a.nav-active:visited {
-  color: black;
+  color: white;
+  font-weight: bold;
 }
 
 .nav-active {
