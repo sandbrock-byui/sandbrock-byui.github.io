@@ -7,6 +7,7 @@
 
 :root {
   --color1: #394648;
+  --color1b:#4a5b5e;
   --color2: #69995d;
   --color3: #cbac88;
   --color4: #edb6a3;
@@ -16,7 +17,7 @@
   --header-color: var(--color2);
   --heading-text-color: black;
   --nav-active-background: var(--color3);
-  --nav-background: var(--color1);
+  --nav-background: var(--color1b);
   --nav-hover-background: var(--color4);
   --main-background: var(--color3);
 }
@@ -64,18 +65,23 @@ ol {
  *********************/
 header {
   background-color: var(--header-background);
-  border-bottom: 1px black solid;
   color: white;  
 }
 
 header h1 {
   color: var(--header-color);
+  padding-bottom: 1rem;
+  padding-top: 2rem;
   text-align: center;
 }
 
 /*********************
  * Navigation
  *********************/
+nav {
+  border-bottom: 1px black solid;
+}
+
 nav ul {
   background-color: var(--nav-background);
   list-style-type: none;
