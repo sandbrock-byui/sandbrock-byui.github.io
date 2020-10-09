@@ -1,0 +1,143 @@
+/*********************
+ * Color Palette: 
+ *   ###https://coolors.co/0c1618-004643-faf4d3-d1ac00-f6be9a
+ *   https://coolors.co/394648-69995d-cbac88-edb6a3-f8e9e9
+ *
+ *********************/
+
+:root {
+  --color1: #394648;
+  --color1b: #4a5b5e;
+  --color2: #69995d;
+  --color3: #cbac88;
+  --color4: #edb6a3;
+  --color5: #f8e9e9;
+
+  --header-background: var(--color1);
+  --header-text: var(--color2);
+
+  --heading-text: black;
+
+  --nav-background: var(--color1b);
+  --nav-background-active: var(--color3);
+  --nav-background-hover: var(--color4);
+  --nav-text: white;
+  --nav-text-hover: black;
+
+  --main-background: var(--color3);
+}
+
+/*********************
+ * Body and Common
+ *********************/
+ body {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+/*********************
+ * Header
+ *********************/
+.title-bar {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.title-bar img {
+  height: auto;
+  width: 75px;
+}
+
+.headings {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 0 0.5rem;
+}
+
+.headings h1 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: .9rem;
+  margin: 0;
+}
+
+.hamburger {
+  margin: 0 0 0 0.5rem;
+}
+
+.hamburgerButton {
+  cursor: pointer;
+}
+
+/*********************
+ * Navigation
+ *********************/
+nav {
+  margin: 0 auto; 
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  background-color: var(--nav-background);
+  color: var(--nav-text);
+  display: block;
+  margin: 2px 0 0 0;
+  padding: 0.9rem 0;
+  text-align: left;
+  text-indent: 1rem;
+  text-decoration: none;  
+}
+
+.navigation a:hover {
+  background-color: var(--nav-background-hover);
+  color: var(--nav-text-hover);
+  font-weight: bold;
+}
+
+.responsive li {
+  display: block;
+}
+
+/*********************
+ * Main
+ *********************/
+main {
+  /*background-color: var(--main-background);*/
+}
+
+.main-title {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.content-placeholder {
+  background-color: lightgray;
+  border: 1px dashed black;
+  margin: 1rem 0 0 0;
+  padding: 1rem 0 1rem 0;
+  text-indent: 1rem;
+}
+
+/*********************
+ * Footer
+ *********************/
+footer p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0 0;
+  text-align: center;
+}

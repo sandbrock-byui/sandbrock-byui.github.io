@@ -1,0 +1,37 @@
+@media only screen and (min-width: 32.5em) {
+
+  /*********************
+    * Header
+    *********************/
+  header img {
+    width: 150px;
+  }
+
+  .headings h1 {
+    font-size: 1.4rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  /*********************
+  * Navigation
+  *********************/
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+}
