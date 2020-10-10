@@ -128,14 +128,14 @@ header {
   text-indent: 1rem;
 }
 
-.navigation li a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+.navigation li.navigation-active a {
+  background-color: rgba(0, 0, 0, 0.1);
   color: var(--nav-text-hover);
   font-weight: bold;
 }
 
-.navigation li.navigation-active a {
-  background-color: rgba(0, 0, 0, 0.1);
+.navigation li a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
   color: var(--nav-text-hover);
   font-weight: bold;
 }
