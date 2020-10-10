@@ -14,7 +14,7 @@
   --color5: #f8e9e9;
 
   --header-background: var(--color1);
-  --header-text: var(--color2);
+  --header-text: var(--color5);
 
   --heading-text: black;
 
@@ -25,24 +25,49 @@
   --nav-text-hover: black;
 
   --main-background: var(--color3);
+
+  --footer-background: var(--color1);
+  --footer-text: white;
 }
 
 /*********************
  * Body and Common
  *********************/
- body {
+body {
   font-family: 'Montserrat', sans-serif;
   max-width: 930px;
   margin: 0 auto;
 }
 
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p,
+ul {
+  margin: 0;
+}
+
 /*********************
  * Header
  *********************/
+header {
+  background-color: var(--header-background);
+  color: var(--header-text);
+}
+
 .title-bar {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.logo {
+  display: none;
 }
 
 .title-bar img {
@@ -55,35 +80,36 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 0 0 0.5rem;
+  margin-left: 0.5rem;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .headings h1 {
-  font-size: 1.4rem;
-  margin: 0;
+  font-size: 1.3rem;
 }
 
 .subtitle {
-  font-size: .9rem;
-  margin: 0;
+  font-size: .8rem;
 }
 
 .hamburger {
-  margin: 0 0 0 0.5rem;
+  margin-left: 1rem;
 }
 
 .hamburgerButton {
+  background-color: transparent;
+  color: white;
   cursor: pointer;
 }
 
 /*********************
  * Navigation
  *********************/
-nav {
-  margin: 0 auto; 
-}
-
 .navigation {
+  background-color: var(--nav-background);
   list-style: none;
   padding: 0;
 }
@@ -92,19 +118,24 @@ nav {
   display: none;
 }
 
-.navigation a {
-  background-color: var(--nav-background);
+.navigation li a {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
   color: var(--nav-text);
   display: block;
-  margin: 2px 0 0 0;
-  padding: 0.9rem 0;
+  padding: 0.8rem 2%;
   text-align: left;
+  text-decoration: none;
   text-indent: 1rem;
-  text-decoration: none;  
 }
 
-.navigation a:hover {
-  background-color: var(--nav-background-hover);
+.navigation li a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: var(--nav-text-hover);
+  font-weight: bold;
+}
+
+.navigation li.navigation-active a {
+  background-color: rgba(0, 0, 0, 0.1);
   color: var(--nav-text-hover);
   font-weight: bold;
 }
@@ -117,27 +148,39 @@ nav {
  * Main
  *********************/
 main {
-  /*background-color: var(--main-background);*/
+  background-color: var(--main-background);
+  padding-bottom: 1rem;
 }
 
 .main-title {
   font-size: 1.3rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0 0 0;
   text-align: center;
 }
 
 .content-placeholder {
-  background-color: lightgray;
+  background-color: var(--color5);
   border: 1px dashed black;
-  margin: 1rem 0 0 0;
-  padding: 1rem 0 1rem 0;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
   text-indent: 1rem;
+}
+
+.content-placeholder:last-of-type {
+  margin-bottom: 0;
 }
 
 /*********************
  * Footer
  *********************/
+footer {
+  background-color: var(--footer-background);
+  color: var(--footer-text);
+  padding: 1rem 0;
+}
+
 footer p {
   font-size: 0.9rem;
-  margin: 0.5rem 0 0 0;
   text-align: center;
 }

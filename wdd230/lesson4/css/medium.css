@@ -3,8 +3,12 @@
   /*********************
     * Header
     *********************/
-  header img {
-    width: 150px;
+  header {
+    padding-bottom: 0;
+  }
+
+  .title-bar img {
+    width: 100%;
   }
 
   .headings h1 {
@@ -15,23 +19,41 @@
     font-size: 1.2rem;
   }
 
+  .hamburger {
+    display: none;
+  }
+
   /*********************
   * Navigation
   *********************/
   .navigation {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7a969b+0,394648+100 */
+    background: #7a969b;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #7a969b 0%, #394648 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #7a969b 0%, #394648 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #7a969b 0%, #394648 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7a969b', endColorstr='#394648', GradientType=0);
+    /* IE6-9 */
+
     display: flex;
   }
 
   .navigation li {
     display: block;
     flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
-  .navigation a {
+  .navigation li a {
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
     text-align: center;
-  }
-
-  .navigation li:first-child {
-    display: none;
+    text-indent: 0;
   }
 }
