@@ -14,7 +14,7 @@
   --color5: #f8e9e9;
 
   --header-background: var(--color1);
-  --header-text: var(--color5);
+  --header-text: white;
 
   --heading-text: black;
 
