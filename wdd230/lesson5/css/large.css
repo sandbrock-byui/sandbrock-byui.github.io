@@ -1,5 +1,40 @@
 @media only screen and (min-width: 60em) {
-  .navigation li a {
-    padding: 0.6rem 2%;
-  }    
+
+  /*********************
+    * Header
+    *********************/
+  header {
+    padding-bottom: 0;
+  }
+
+  .headings {
+    margin-left: 1rem;
+  }
+
+  .headings h1 {
+    font-size: 1.4rem;
+  }
+
+  .logo {
+    margin-left: 2em;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .title-bar {
+    justify-content: left;
+  }
+
+  .title-bar img {
+    width: 100%;
+  }
+
+  /*********************
+    * Main > Forecast
+    *********************/
+  .five-day-forecast {
+    grid-gap: 1rem;
+  }
 }

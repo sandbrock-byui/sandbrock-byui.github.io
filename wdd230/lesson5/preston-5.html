@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Preston Page plan for Brandon Rock in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <title>Preston Idaho Weather Page</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-wide">
+      <section class="title-bar">
+        <picture class="logo">
+          <img src="images/TheWeatherLoungeLogo2-small.png" alt="The Weather Lounge logo">
+        </picture>
+
+        <div class="headings">
+          <h1>The Weather Lounge</h1>
+          <p class="subtitle">Making Weather Simple</p>
+        </div>
+
+        <h1 class="hamburger"><span class="hamburgerButton">&#9776;</span></h1>
+      </section>
+    </div>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li class="navigation-active"><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="main-title">Preston Idaho</h2>
+
+    <picture class="hero"><img src="images/preston-hero.jpg" alt="Preston hero"></picture>
+
+    <article class="summary">
+      <header>
+        <h3>Weather Summary</h3>
+      </header>
+
+      <section class="article-body">
+        <div class="article-body-details">
+          <p>Cloudy With a Chance of Meatballs</p>
+          <p>Snow</p>
+          <p>34℉</p>
+        </div>
+      </section>
+    </article>
+
+    <article>
+      <header>
+        <h3>5 Day Forecast</h3>
+      </header>
+
+      <section class="five-day-forecast">
+        <article class="forecast-entry">
+          <header>Mon</header>
+          <picture><img src="images/icon-forecast-cloudy.svg" alt="Cloudy icon"></picture>
+          <div class="forecast-temperature">29℉</div>
+        </article>
+
+        <article class="forecast-entry">
+          <header>Tue</header>
+          <picture><img src="images/icon-forecast-cloudy.svg" alt="Cloudy icon"></picture>
+          <div class="forecast-temperature">31℉</div>
+        </article>
+
+        <article class="forecast-entry">
+          <header>Wed</header>
+          <picture><img src="images/icon-forecast-cloudy.svg" alt="Cloudy icon"></picture>
+          <div class="forecast-temperature">21℉</div>
+        </article>
+
+        <article class="forecast-entry">
+          <header>Thu</header>
+          <picture><img src="images/icon-forecast-cloudy.svg" alt="Cloudy icon"></picture>
+          <div class="forecast-temperature">32℉</div>
+        </article>
+
+        <article class="forecast-entry">
+          <header>Fri</header>
+          <picture><img src="images/icon-forecast-cloudy.svg" alt="Cloudy icon"></picture>
+          <div class="forecast-temperature">34℉</div>
+        </article>
+      </section>
+    </article>
+
+    <article class="main-article">
+      <header>
+        <h3>Article</h3>
+      </header>
+
+      <section class="article-body">
+        <div class="article-body-details">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices quis mi ut maximus. Etiam est
+          quam,
+          laoreet in molestie vitae, viverra posuere urna. Pellentesque ut ipsum non velit ultrices lobortis.
+          Aliquam
+          sit amet orci ipsum. Pellentesque mauris ligula, cursus eleifend lacus id, bibendum posuere justo. Duis
+          lorem
+          quam, fringilla id magna ac, eleifend pharetra dolor. Ut eu dolor est. Aenean magna dui, suscipit in ipsum
+          tempor, aliquam sagittis ante. Proin dapibus congue quam. Vestibulum lectus orci, pharetra quis hendrerit
+          id,
+          feugiat nec nibh.
+          <picture><img src="images/preston-article.jpg" alt="Article photo"></picture>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-centered">
+      <article>
+        <header>Contact Information</header>
+        <section class="contact-info">
+          <p><img src="images/icon-email.svg" alt="Email Address" class="icon-small"> support@theweatherlounge.com</p>
+          <p><img src="images/icon-telephone.svg" alt="Phone" class="icon-small"> 801-122-1223</p>
+          <img src="images/map.jpg" alt="Map" class="map">
+        </section>
+      </article>
+
+      <section class="footer-info">
+        <p>&#169; The Weather Lounge | Attributions | Brandon Rock</p>
+        <p id="current-date"></p>
+      </section>
+    </div>
+  </footer>
+
+  <script src="js/hamburgerMenu.js"></script>
+  <script src="js/footerDates.js"></script>
+</body>
+
+</html>
