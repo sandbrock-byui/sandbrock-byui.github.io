@@ -48,18 +48,18 @@
 
     <picture class="hero"><img src="images/preston-hero.jpg" alt="Preston hero"></picture>
 
-    <article class="summary">
+    <article class="main-summary">
       <header>
         <h3>Weather Summary</h3>
       </header>
 
-      <section class="article-body">
+      <div class="article-body">
         <div class="article-body-details">
           <p>Cloudy With a Chance of Meatballs</p>
           <p>Snow</p>
           <p>34℉</p>
         </div>
-      </section>
+      </div>
     </article>
 
     <article>
@@ -67,37 +67,47 @@
         <h3>5 Day Forecast</h3>
       </header>
 
-      <section class="five-day-forecast">
+      <div class="five-day-forecast">
         <article class="forecast-entry">
-          <header>Mon</header>
+          <header>
+            <h4>Mon</h4>
+          </header>
           <picture><img src="images/icon-forecast-cloudy.svg" alt="Cloudy icon"></picture>
           <div class="forecast-temperature">29℉</div>
         </article>
 
         <article class="forecast-entry">
-          <header>Tue</header>
+          <header>
+            <h4>Tue</h4>
+          </header>
           <picture><img src="images/icon-forecast-cloudy.svg" alt="Cloudy icon"></picture>
           <div class="forecast-temperature">31℉</div>
         </article>
 
         <article class="forecast-entry">
-          <header>Wed</header>
+          <header>
+            <h4>Wed</h4>
+          </header>
           <picture><img src="images/icon-forecast-cloudy.svg" alt="Cloudy icon"></picture>
           <div class="forecast-temperature">21℉</div>
         </article>
 
         <article class="forecast-entry">
-          <header>Thu</header>
+          <header>
+            <h4>Thu</h4>
+          </header>
           <picture><img src="images/icon-forecast-cloudy.svg" alt="Cloudy icon"></picture>
           <div class="forecast-temperature">32℉</div>
         </article>
 
         <article class="forecast-entry">
-          <header>Fri</header>
+          <header>
+            <h4>Fri</h4>
+          </header>
           <picture><img src="images/icon-forecast-cloudy.svg" alt="Cloudy icon"></picture>
           <div class="forecast-temperature">34℉</div>
         </article>
-      </section>
+      </div>
     </article>
 
     <article class="main-article">
@@ -105,39 +115,59 @@
         <h3>Article</h3>
       </header>
 
-      <section class="article-body">
+      <div class="article-body">
         <div class="article-body-details">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices quis mi ut maximus. Etiam est
-          quam,
-          laoreet in molestie vitae, viverra posuere urna. Pellentesque ut ipsum non velit ultrices lobortis.
-          Aliquam
-          sit amet orci ipsum. Pellentesque mauris ligula, cursus eleifend lacus id, bibendum posuere justo. Duis
-          lorem
-          quam, fringilla id magna ac, eleifend pharetra dolor. Ut eu dolor est. Aenean magna dui, suscipit in ipsum
-          tempor, aliquam sagittis ante. Proin dapibus congue quam. Vestibulum lectus orci, pharetra quis hendrerit
-          id,
-          feugiat nec nibh.
-          <picture><img src="images/preston-article.jpg" alt="Article photo"></picture>
+          <picture class="article-picture"><img src="images/preston-article.jpg" alt="Article photo"></picture>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum nisi odio, et feugiat ex tempus
+          eget. Quisque posuere venenatis tempus. Duis consectetur felis sit amet nibh suscipit porttitor. Vestibulum ut
+          pretium justo. Duis porta orci nisi, quis scelerisque nisi mattis at. Integer suscipit justo eget lectus
+          blandit semper pretium eget urna. Integer eu nisi iaculis, suscipit tortor eget, varius sem. Aenean nec turpis
+          non dui malesuada elementum id ullamcorper metus. Etiam ornare est ut nunc fermentum laoreet. Sed porttitor
+          nulla ut dui consequat, nec laoreet odio fringilla. Maecenas id molestie magna. Ut sodales lacus vel auctor
+          convallis.
+
+          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In ligula metus,
+          lobortis vel semper id, volutpat sit amet nisl. Pellentesque in tellus libero. Morbi consectetur vitae mi a
+          efficitur. Aliquam viverra, justo et varius semper, est neque tempus magna, nec pharetra neque magna at felis.
+          Nam scelerisque euismod magna. Nam imperdiet mauris ut arcu semper porttitor. Curabitur nec metus sodales,
+          lobortis tellus id, ornare velit. Praesent nunc lectus, dictum ut ligula ut, mollis rutrum libero. Cras
+          venenatis ante in viverra tempor. Fusce id molestie leo. Orci varius natoque penatibus et magnis dis
+          parturient montes, nascetur ridiculus mus. Cras fringilla massa a lobortis scelerisque. Fusce vitae mi mauris.
         </div>
-      </section>
+      </div>
     </article>
   </main>
 
   <footer>
     <div class="footer-centered">
-      <article>
-        <header>Contact Information</header>
-        <section class="contact-info">
-          <p><img src="images/icon-email.svg" alt="Email Address" class="icon-small"> support@theweatherlounge.com</p>
-          <p><img src="images/icon-telephone.svg" alt="Phone" class="icon-small"> 801-122-1223</p>
-          <img src="images/map.jpg" alt="Map" class="map">
-        </section>
-      </article>
+      <div class="footer-contact">
+        <div class="footer-contact-details">
+          <section>
+            <h4>Contact Information</h4>
+            <div class="contact-info">
+              <p><img src="images/icon-email.svg" alt="Email Address" class="icon-small">support@theweatherlounge.com
+              </p>
+              <p><img src="images/icon-telephone.svg" alt="Phone" class="icon-small"> 801-122-1223</p>
+            </div>
+          </section>
 
-      <section class="footer-info">
+          <div class="footer-social-media">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt="Facebook icon"
+                class="icon-touch"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/icon-instagram.svg"
+                alt="Instagram icon" class="icon-touch"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/icon-twitter.svg" alt="Twitter icon"
+                class="icon-touch"></a>
+          </div>
+        </div>
+
+        <img src="images/map.jpg" alt="Map" class="map">
+      </div>
+
+      <div class="footer-info">
         <p>&#169; The Weather Lounge | Attributions | Brandon Rock</p>
         <p id="current-date"></p>
-      </section>
+      </div>
     </div>
   </footer>
 

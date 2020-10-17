@@ -107,9 +107,9 @@ ul {
 /*********************
  * Navigation
  *********************/
- nav {
-   background-color: var(--nav-background);
- }
+nav {
+  background-color: var(--nav-background);
+}
 
 .navigation {
   list-style: none;
@@ -232,6 +232,11 @@ main article header {
 /*********************
  * Main > Article
  *********************/
+.article-body-details {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .main-article img {
   display: block;
   margin: 0 auto;
@@ -239,8 +244,9 @@ main article header {
   width: 100%;
 }
 
-.main-article picture {
-  padding: 1rem 0;
+.article-picture {
+  display: block;
+  padding: 1rem 0 0 0;
 }
 
 /*********************
@@ -275,6 +281,10 @@ footer article header {
   max-width: 930px;
 }
 
+.footer-contact-details {
+  padding: 0 0 1rem 1rem;
+}
+
 .footer-info {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   font-size: 0.9rem;
@@ -282,12 +292,23 @@ footer article header {
   text-align: center;
 }
 
+.footer-social-media {
+  display: none;
+  padding: 1rem 0 0 4rem;
+}
+
 .icon-small {
+  padding-right: 1rem;
   width: 16px;
+}
+
+.icon-touch {
+  width: 44px;
 }
 
 .map {
   display: block;
-  margin: 1rem auto 0 auto;
+  margin: 1rem auto;
+  padding-left: 1rem;
   width: 90%;
 }
