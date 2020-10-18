@@ -90,6 +90,17 @@ ul {
   font-size: 1.2rem;
 }
 
+.header-banner {
+  background-color: var(--main-background);
+  border: 1px solid red;
+  display: none;
+  padding: 1rem;
+}
+
+.header-banner-enabled {
+  display: block;
+}
+
 .subtitle {
   font-size: .8rem;
 }
