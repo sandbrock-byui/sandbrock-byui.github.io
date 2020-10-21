@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Preston Page plan for Brandon Rock in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <title>Preston Idaho Weather Page</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-banner">
+      Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </div>
+
+    <div class="header-wide">
+      <section class="title-bar">
+        <picture class="logo">
+          <img src="images/TheWeatherLoungeLogo2-small.png" alt="The Weather Lounge logo">
+        </picture>
+
+        <div class="headings">
+          <h1>The Weather Lounge</h1>
+          <p class="subtitle">Making Weather Simple</p>
+        </div>
+
+        <h1 class="hamburger"><span class="hamburgerButton">&#9776;</span></h1>
+      </section>
+    </div>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li class="navigation-active"><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="main-title">Preston Idaho</h2>
+
+    <picture class="hero">
+      <source srcset="images/hero400.jpg" media="(max-width: 400px)">
+      <source srcset="images/hero650.jpg" media="(max-width: 650px)">
+      <source srcset="images/hero930.jpg" media="(max-width: 930px)">
+      <img src="images/hero930.jpg" alt="Preston hero">
+    </picture>
+
+    <article class="main-summary">
+      <header>
+        <h3>Weather Summary</h3>
+      </header>
+
+      <div class="article-body">
+        <div class="article-body-details">
+          <p>Cloudy With a Chance of Meatballs</p>
+          <p>Snow</p>
+          <p>34℉</p>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <header>
+        <h3>5 Day Forecast</h3>
+      </header>
+
+      <div class="five-day-forecast">
+        <article class="forecast-entry">
+          <header>
+            <h4>Mon</h4>
+          </header>
+          <picture><img src="images/icon-forecast-cloudy.svg" alt="Cloudy icon"></picture>
+          <div class="forecast-temperature">29℉</div>
+        </article>
+
+        <article class="forecast-entry">
+          <header>
+            <h4>Tue</h4>
+          </header>
+          <picture><img src="images/icon-forecast-cloudy.svg" alt="Cloudy icon"></picture>
+          <div class="forecast-temperature">31℉</div>
+        </article>
+
+        <article class="forecast-entry">
+          <header>
+            <h4>Wed</h4>
+          </header>
+          <picture><img src="images/icon-forecast-cloudy.svg" alt="Cloudy icon"></picture>
+          <div class="forecast-temperature">21℉</div>
+        </article>
+
+        <article class="forecast-entry">
+          <header>
+            <h4>Thu</h4>
+          </header>
+          <picture><img src="images/icon-forecast-cloudy.svg" alt="Cloudy icon"></picture>
+          <div class="forecast-temperature">32℉</div>
+        </article>
+
+        <article class="forecast-entry">
+          <header>
+            <h4>Fri</h4>
+          </header>
+          <picture><img src="images/icon-forecast-cloudy.svg" alt="Cloudy icon"></picture>
+          <div class="forecast-temperature">34℉</div>
+        </article>
+      </div>
+    </article>
+
+    <article class="main-article">
+      <header>
+        <h3>Article</h3>
+      </header>
+
+      <div class="article-body">
+        <div class="article-body-details">
+          <picture class="article-picture"><img src="images/preston-article.jpg" alt="Article photo"></picture>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum nisi odio, et feugiat ex tempus
+          eget. Quisque posuere venenatis tempus. Duis consectetur felis sit amet nibh suscipit porttitor. Vestibulum ut
+          pretium justo. Duis porta orci nisi, quis scelerisque nisi mattis at. Integer suscipit justo eget lectus
+          blandit semper pretium eget urna. Integer eu nisi iaculis, suscipit tortor eget, varius sem. Aenean nec turpis
+          non dui malesuada elementum id ullamcorper metus. Etiam ornare est ut nunc fermentum laoreet. Sed porttitor
+          nulla ut dui consequat, nec laoreet odio fringilla. Maecenas id molestie magna. Ut sodales lacus vel auctor
+          convallis.
+
+          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In ligula metus,
+          lobortis vel semper id, volutpat sit amet nisl. Pellentesque in tellus libero. Morbi consectetur vitae mi a
+          efficitur. Aliquam viverra, justo et varius semper, est neque tempus magna, nec pharetra neque magna at felis.
+          Nam scelerisque euismod magna. Nam imperdiet mauris ut arcu semper porttitor. Curabitur nec metus sodales,
+          lobortis tellus id, ornare velit. Praesent nunc lectus, dictum ut ligula ut, mollis rutrum libero. Cras
+          venenatis ante in viverra tempor. Fusce id molestie leo. Orci varius natoque penatibus et magnis dis
+          parturient montes, nascetur ridiculus mus. Cras fringilla massa a lobortis scelerisque. Fusce vitae mi mauris.
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-centered">
+      <div class="footer-contact">
+        <div class="footer-contact-details">
+          <section>
+            <h4>Contact Information</h4>
+            <div class="contact-info">
+              <p><img src="images/icon-email.svg" alt="Email Address" class="icon-small">support@theweatherlounge.com
+              </p>
+              <p><img src="images/icon-telephone.svg" alt="Phone" class="icon-small"> 801-122-1223</p>
+            </div>
+          </section>
+
+          <div class="footer-social-media">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt="Facebook icon"
+                class="icon-touch"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/icon-instagram.svg"
+                alt="Instagram icon" class="icon-touch"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/icon-twitter.svg" alt="Twitter icon"
+                class="icon-touch"></a>
+          </div>
+        </div>
+
+        <img src="images/map.jpg" alt="Map" class="map">
+      </div>
+
+      <div class="footer-info">
+        <p>&#169; The Weather Lounge | Attributions | Brandon Rock</p>
+        <p id="current-date"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/fonts.js"></script>
+  <script src="js/headerBanner.js"></script>
+  <script src="js/hamburgerMenu.js"></script>
+  <script src="js/footerDates.js"></script>
+</body>
+
+</html>
