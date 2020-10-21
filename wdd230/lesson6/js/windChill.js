@@ -1,3 +1,4 @@
+
 let hightempElement = document.getElementById("summary-high-temperature");
 let windspeedElement = document.getElementById("summary-wind-speed");
 let windchillElement = document.getElementById("summary-wind-chill");
