@@ -1,6 +1,5 @@
 /*********************
  * Color Palette: 
- *   ###https://coolors.co/0c1618-004643-faf4d3-d1ac00-f6be9a
  *   https://coolors.co/394648-69995d-cbac88-edb6a3-f8e9e9
  *
  *********************/
@@ -24,7 +23,8 @@
   --nav-text: white;
   --nav-text-hover: black;
 
-  --main-background: var(--color3);
+  --main-background: var(--color5);
+  --main-header-background: var(--color3);
 
   --footer-background: var(--color1);
   --footer-text: white;
@@ -35,11 +35,10 @@
  *********************/
 body {
   font-family: 'Montserrat', sans-serif;
-  max-width: 930px;
-  margin: 0 auto;
 }
 
 a,
+article,
 h1,
 h2,
 h3,
@@ -47,7 +46,9 @@ h4,
 h5,
 h6,
 li,
+main,
 p,
+picture,
 ul {
   margin: 0;
 }
@@ -55,19 +56,17 @@ ul {
 /*********************
  * Header
  *********************/
-header {
+.header-wide {
+  align-items: center;
   background-color: var(--header-background);
-  color: var(--header-text);
 }
 
 .title-bar {
-  align-items: center;
+  color: var(--header-text);
   display: flex;
   justify-content: center;
-}
-
-.logo {
-  display: none;
+  margin: 0 auto;
+  max-width: 930px;
 }
 
 .title-bar img {
@@ -88,7 +87,18 @@ header {
 }
 
 .headings h1 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+}
+
+.header-banner {
+  background-color: var(--main-background);
+  border: 1px solid red;
+  display: none;
+  padding: 1rem;
+}
+
+.header-banner-enabled {
+  display: block;
 }
 
 .subtitle {
@@ -108,9 +118,14 @@ header {
 /*********************
  * Navigation
  *********************/
-.navigation {
+nav {
   background-color: var(--nav-background);
+}
+
+.navigation {
   list-style: none;
+  margin: 0 auto;
+  max-width: 930px;
   padding: 0;
 }
 
@@ -149,20 +164,26 @@ header {
  *********************/
 main {
   background-color: var(--main-background);
-  padding-bottom: 1rem;
+  max-width: 930px;
+  margin: 0 auto;
 }
 
-.main-title {
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-  padding: 1rem 0 0 0;
+main article header {
+  background-color: var(--main-header-background);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  padding: 1rem 0;
   text-align: center;
 }
 
+.article-body {
+  padding: 1rem;
+}
+
 .content-placeholder {
-  background-color: var(--color5);
   border: 1px dashed black;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   padding: 1rem 0;
   text-indent: 1rem;
 }
@@ -171,16 +192,134 @@ main {
   margin-bottom: 0;
 }
 
+.main-title {
+  background-color: var(--main-header-background);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/*********************
+ * Main > Hero
+ *********************/
+.hero {
+  display: block;
+  margin-bottom: -4px;
+}
+
+.hero img {
+  width: 100%;
+}
+
+/*********************
+ * Main > Forecast
+ *********************/
+.five-day-forecast {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 1rem;
+}
+
+.forecast-entry {
+  background-color: white;
+  border: 1px solid black;
+  flex: 1 1 auto;
+}
+
+.forecast-entry header {
+  background-color: var(--header-background);
+  color: var(--header-text);
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.forecast-temperature {
+  font-size: larger;
+  text-align: center;
+}
+
+/*********************
+ * Main > Article
+ *********************/
+.article-body-details {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.main-article img {
+  display: block;
+  margin: 0 auto;
+  max-width: 650px;
+  width: 100%;
+}
+
+.article-picture {
+  display: block;
+  padding: 1rem 0 0 0;
+}
+
 /*********************
  * Footer
  *********************/
 footer {
   background-color: var(--footer-background);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
   color: var(--footer-text);
   padding: 1rem 0;
 }
 
-footer p {
+footer article {
+  margin-bottom: 1rem;
+}
+
+footer article header {
+  font-size: 1.2rem;
+  padding: 0;
+  text-align: left;
+  text-indent: 2rem
+}
+
+.contact-info {
   font-size: 0.9rem;
+  margin-top: 1rem;
+  text-indent: 2rem;
+}
+
+.footer-centered {
+  margin: 0 auto;
+  max-width: 930px;
+}
+
+.footer-contact-details {
+  padding: 0 0 1rem 1rem;
+}
+
+.footer-info {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 0.9rem;
+  padding-top: 1rem;
   text-align: center;
+}
+
+.footer-social-media {
+  display: none;
+  padding: 1rem 0 0 4rem;
+}
+
+.icon-small {
+  padding-right: 1rem;
+  width: 16px;
+}
+
+.icon-touch {
+  width: 44px;
+}
+
+.map {
+  display: block;
+  margin: 1rem auto;
+  padding-left: 1rem;
+  width: 90%;
 }

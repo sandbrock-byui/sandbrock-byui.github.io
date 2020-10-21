@@ -3,29 +3,13 @@
   /*********************
     * Header
     *********************/
-  header {
-    padding-bottom: 0;
-  }
+    .hamburger {
+      display: none;
+    }
 
-  .title-bar img {
-    width: 100%;
-  }
-
-  .headings h1 {
-    font-size: 1.4rem;
-  }
-
-  .subtitle {
-    font-size: 1.2rem;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  /*********************
-  * Navigation
-  *********************/
+   /*********************
+    * Navigation
+    *********************/
   .navigation {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7a969b+0,394648+100 */
     background: #7a969b;
@@ -53,7 +37,10 @@
 
   .navigation li a {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0.6rem 2%;
     text-align: center;
     text-indent: 0;
   }
+
+
 }

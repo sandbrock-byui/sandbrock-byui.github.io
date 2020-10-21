@@ -1,5 +1,119 @@
 @media only screen and (min-width: 60em) {
-  .navigation li a {
-    padding: 0.6rem 2%;
-  }    
+
+  /*********************
+    * Header
+    *********************/
+  header {
+    padding-bottom: 0;
+  }
+
+  .headings {
+    margin-left: 1rem;
+  }
+
+  .headings h1 {
+    font-size: 1.4rem;
+  }
+
+  .logo {
+    margin-left: 2em;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .title-bar {
+    justify-content: left;
+  }
+
+  .title-bar img {
+    width: 100%;
+  }
+
+  /*********************
+    * Main
+    *********************/
+  main {
+    position: relative;
+  }
+
+  /*********************
+    * Main > Summary
+    *********************/
+  .main-summary {
+    background-color: rgba(74,91,94,0.75);
+    box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75);
+    color: white;
+    height: 150px;
+    left: 30px;
+    position: absolute;
+    top: 5.5rem;
+  }
+
+  .main-summary header {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7a969b+0,394648+100 */
+    background: #7a969b;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #7a969b 0%, #394648 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #7a969b 0%, #394648 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #7a969b 0%, #394648 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7a969b', endColorstr='#394648', GradientType=0);
+    /* IE6-9 */
+
+    color: black;
+    padding: 0.5rem 0;
+  }
+
+  /*********************
+    * Main > Forecast
+    *********************/
+  .five-day-forecast {
+    grid-gap: 1rem;
+  }
+
+  /*********************
+    * Main > Article
+    *********************/
+  .article-body-details {
+    display: block;
+    position: relative;
+  }
+
+  .article-picture {
+    float: right;
+    padding: 0;
+    width: 200px;
+  }
+
+  .main-article img {
+    display: inline;
+  }
+
+  /*********************
+    * Footer
+    *********************/
+  .footer-contact {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    margin-bottom: 1rem;
+  }
+
+  .footer-contact-details section {
+    flex: 1 1 auto;
+  }
+
+  .footer-social-media {
+    display: block;
+  }
+
+  .map {
+    flex: 1 1 auto;
+    margin: 0;
+    width: 400px;
+  }
 }
