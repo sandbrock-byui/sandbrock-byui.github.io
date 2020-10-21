@@ -63,11 +63,11 @@
       </header>
 
       <div class="article-body">
-        <div class="article-body-details">
-          <p>Cloudy With a Chance of Meatballs</p>
-          <p>Snow</p>
-          <p>34℉</p>
-        </div>
+        <p>Currently: Rainy</p>
+        <p>High: <span id="summary-high-temperature">45</span>℉</p>
+        <p>Wind Chill: <span id="summary-wind-chill">N/A</span></p>
+        <p>Humidity: 95%</p>
+        <p>Wind Speed: <span id="summary-wind-speed">12</span>mph</p>
       </div>
     </article>
 
@@ -126,7 +126,7 @@
 
       <div class="article-body">
         <div class="article-body-details">
-          <picture class="article-picture"><img src="images/preston-article.jpg" alt="Article photo"></picture>
+          <picture class="article-picture"><img src="images/preston-article250.jpg" alt="Article photo"></picture>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum nisi odio, et feugiat ex tempus
           eget. Quisque posuere venenatis tempus. Duis consectetur felis sit amet nibh suscipit porttitor. Vestibulum ut
           pretium justo. Duis porta orci nisi, quis scelerisque nisi mattis at. Integer suscipit justo eget lectus
@@ -170,7 +170,10 @@
           </div>
         </div>
 
-        <img src="images/map.jpg" alt="Map" class="map">
+        <picture class="footer-map">
+          <source srcset="images/map400.jpg" media="(max-width: 400px)">
+          <img src="images/map520.jpg" alt="Map" class="footer-map">
+        </picture>
       </div>
 
       <div class="footer-info">
@@ -182,9 +185,10 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/fonts.js"></script>
-  <script src="js/headerBanner.js"></script>
-  <script src="js/hamburgerMenu.js"></script>
-  <script src="js/footerDates.js"></script>
+  <script src="js/headerbanner.js"></script>
+  <script src="js/hamburgermenu.js"></script>
+  <script src="js/windchill.js"></script>
+  <script src="js/footerdates.js"></script>
 </body>
 
 </html>

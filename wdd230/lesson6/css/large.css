@@ -45,7 +45,7 @@
     background-color: rgba(74,91,94,0.75);
     box-shadow: 10px 10px 34px 0px rgba(0,0,0,0.75);
     color: white;
-    height: 150px;
+    height: 180px;
     left: 30px;
     position: absolute;
     top: 5.5rem;
@@ -85,8 +85,8 @@
 
   .article-picture {
     float: right;
-    padding: 0;
-    width: 200px;
+    padding: 0 0 0 1rem;
+    width: 25%;
   }
 
   .main-article img {
@@ -100,6 +100,7 @@
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
+    justify-content: center;
     margin-bottom: 1rem;
   }
 
@@ -111,9 +112,13 @@
     display: block;
   }
 
-  .map {
+  .footer-map {
     flex: 1 1 auto;
     margin: 0;
-    width: 400px;
+    padding: 0;
+  }
+
+  .footer-map img {
+    max-width: 520px;
   }
 }

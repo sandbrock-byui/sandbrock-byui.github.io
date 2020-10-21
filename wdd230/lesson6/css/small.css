@@ -214,6 +214,13 @@ main article header {
 }
 
 /*********************
+ * Main > Summary
+ *********************/
+article.main-summary p:not(:first-child) {
+  margin-top: .3rem;
+}
+
+/*********************
  * Main > Forecast
  *********************/
 .five-day-forecast {
@@ -251,7 +258,7 @@ main article header {
 .main-article img {
   display: block;
   margin: 0 auto;
-  max-width: 650px;
+  max-width: 250px;
   width: 100%;
 }
 
@@ -303,6 +310,13 @@ footer article header {
   text-align: center;
 }
 
+.footer-map img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 520px;
+  width: 90%;
+}
+
 .footer-social-media {
   display: none;
   padding: 1rem 0 0 4rem;
@@ -315,11 +329,4 @@ footer article header {
 
 .icon-touch {
   width: 44px;
-}
-
-.map {
-  display: block;
-  margin: 1rem auto;
-  padding-left: 1rem;
-  width: 90%;
 }
