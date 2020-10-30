@@ -1,0 +1,19 @@
+img {  
+  filter: blur(0.5em);
+  height: 400px;
+  width: 300px;
+}
+
+img.lazyloaded {
+  filter: blur(0em);
+  transition: filter 1s;
+}
+
+.image-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
