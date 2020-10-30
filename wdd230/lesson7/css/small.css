@@ -283,7 +283,11 @@ article.main-summary p:not(:first-child) {
   text-align: center;
 }
 
-.gallery-image-container picture {
+.gallery-image-container p {
+  padding: 3px 0;
+}
+
+.gallery-image {
   background-color: white;
   /*box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.15);*/
   display: inline-block;
@@ -292,7 +296,7 @@ article.main-summary p:not(:first-child) {
   text-align: center;
 }
 
-.gallery-image-container picture img {
+.gallery-image img {
   display: block;
   filter: blur(0.5em);
   height: auto;
@@ -300,13 +304,9 @@ article.main-summary p:not(:first-child) {
   width: 100%;
 }
 
-.gallery-image-container picture img.lazy-loaded {
+.gallery-image img.lazy-loaded {
   filter: blur(0em);
   transition: filter 1s;
-}
-
-.gallery-image-container p {
-  padding: 3px 0;
 }
 
 /*********************
