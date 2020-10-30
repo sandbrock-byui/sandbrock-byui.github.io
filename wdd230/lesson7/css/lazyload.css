@@ -4,7 +4,7 @@ img {
   width: 300px;
 }
 
-img.lazyloaded {
+img.lazy-loaded {
   filter: blur(0em);
   transition: filter 1s;
 }

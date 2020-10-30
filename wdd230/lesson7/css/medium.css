@@ -42,5 +42,10 @@
     text-indent: 0;
   }
 
-
+  /*********************
+   * Main > Gallery
+   *********************/
+   .gallery-container {
+     grid-template-columns: repeat(2, 1fr);
+   }
 }

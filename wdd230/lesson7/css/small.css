@@ -107,6 +107,7 @@ ul {
 
 .hamburger {
   margin-left: 1rem;
+  margin-top: 1.3rem;
 }
 
 .hamburgerButton {
@@ -265,6 +266,47 @@ article.main-summary p:not(:first-child) {
 .article-picture {
   display: block;
   padding: 1rem 0 0 0;
+}
+
+/*********************
+ * Main > Gallery
+ *********************/
+.gallery-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.gallery-image-container {
+  text-align: center;
+}
+
+.gallery-image-container picture {
+  background-color: white;
+  /*box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.15);*/
+  display: inline-block;
+  margin: 0 auto;
+  padding: 1rem 1rem 0 1rem;
+  text-align: center;
+}
+
+.gallery-image-container picture img {
+  display: block;
+  filter: blur(0.5em);
+  height: auto;
+  max-width: 300px;
+  width: 100%;
+}
+
+.gallery-image-container picture img.lazy-loaded {
+  filter: blur(0em);
+  transition: filter 1s;
+}
+
+.gallery-image-container p {
+  padding: 3px 0;
 }
 
 /*********************
