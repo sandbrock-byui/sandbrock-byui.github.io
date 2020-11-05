@@ -1,0 +1,63 @@
+:root {
+  --even-row-background: #e7ffed;
+  --header-background: #7fb9c2;
+  --header-row-background: #628ca6;
+  --odd-row-background: #e7f0ed;
+}
+
+body {
+  font-family: Ubuntu, sans-serif;
+}
+
+table {
+  border: 2px solid lightgray;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 2px solid lightgray;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+thead tr:first-of-type {
+  border: 1px solid red;
+  background-color: var(--header-background);
+  color: black;
+  text-align: center;
+}
+
+thead tr {
+  background-color: var(--header-row-background);
+  border: 2px solid lightgray;
+  color: white;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--even-row-background);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--odd-row-background);
+}
+
+tfoot tr {
+  background-color: var(--header-background);
+  color: black;
+  font-size: .75em;
+}
+
+#content {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.highlight-day {
+  font-style: italic;
+}
+
+.highlight-goal {
+  background-color: var(--header-row-background);
+  color: white;
+}
