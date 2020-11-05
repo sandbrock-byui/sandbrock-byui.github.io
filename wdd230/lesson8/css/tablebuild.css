@@ -7,11 +7,13 @@
 
 body {
   font-family: Ubuntu, sans-serif;
+  font-size: 1.2em;
 }
 
 table {
   border: 2px solid lightgray;
   border-collapse: collapse;
+  box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
 }
 
 td, th {
@@ -24,6 +26,7 @@ thead tr:first-of-type {
   border: 1px solid red;
   background-color: var(--header-background);
   color: black;
+  font-size: 1.5em;
   text-align: center;
 }
 
@@ -50,7 +53,7 @@ tfoot tr {
 
 #content {
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .highlight-day {
