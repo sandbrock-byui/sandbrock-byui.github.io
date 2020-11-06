@@ -37,58 +37,63 @@
         <li><a href="preston-8.html">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
-        <li><a href="stormcenter-8.html">Storm Center</a></li>
-        <li class="navigation-active"><a href="#">Gallery</a></li>
+        <li class="navigation-active"><a href="#">Storm Center</a></li>
+        <li><a href="gallery-8.html">Gallery</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h2 class="main-title">Weather Gallery</h2>
+    <div id="storm-form">
+      <form action="thanks-8.html">
+        <fieldset>
+          <legend>Storm Report</legend>
 
-    <div class="gallery-container">
-      <div class="gallery-image-container">
-        <div class="gallery-image">
-          <img src="https://via.placeholder.com/300x400.png?text=Snowy%20Ski%20Resort" alt="Snowy Ski Resort"
-            data-src="images/weather1.jpg">
-          <p>Snowy Ski Resort</p>
-        </div>
-      </div>
-      <div class="gallery-image-container">
-        <div class="gallery-image">
-          <img src="https://via.placeholder.com/300x400.png?text=Snow%20Tree" alt="Snowy Tree"
-            data-src="images/weather2.jpg">
-            <p>Snowy Tree</p>
-          </div>
-      </div>
-      <div class="gallery-image-container">
-        <div class="gallery-image">
-          <img src="https://via.placeholder.com/300x400.png?text=Snowy%20Bridge" alt="Snowy Bridge"
-            data-src="images/weather3.jpg">
-            <p>Snowy Bridge</p>
-        </div>
-      </div>
-      <div class="gallery-image-container">
-        <div class="gallery-image">
-          <img src="https://via.placeholder.com/300x400.png?text=Snowy%20Mountain%20Sunset" alt="Snowy Mountain Sunset"
-            data-src="images/weather4.jpg">
-            <p>Snowy Mountain Sunset</p>
-        </div>
-      </div>
-      <div class="gallery-image-container">
-        <div class="gallery-image">
-          <img src="https://via.placeholder.com/300x400.png?text=Lightning%20In%20the%20Sky" alt="Lightning In the Sky"
-            data-src="images/weather5.jpg">
-            <p>Lightning at Night</p>
-        </div>
-      </div>
-      <div class="gallery-image-container">
-        <div class="gallery-image">
-          <img src="https://via.placeholder.com/300x400.png?text=Sunny%20Mountain%20Highway" alt="Sunny Mountain Highway"
-            data-src="images/weather6.jpg">
-            <p>Sunny Mountain Highway</p>
-        </div>
-      </div>
+          <label class="label-top">Full Name: <input type="text" name="name" required pattern="[A-Za-z\. ]{5,}"></label>
+          <label class="label-top">Email: <input type="email" name="email" placeholder="username@gmail.com"></label>
+          <label class="label-top">Phone Number: <input type="tel" name="phone" required></label>
+          <label class="label-top">Zip Code: <input type="number" name="zip" required></label>
+          <label class="label-top">Storm Date: <input type="date" name="storm-date"></label>
+
+          <label class="label-top">Storm Type:
+            <input list="storm-types" name="storm-type">
+            <datalist id="storm-types">
+              <option value="Flash Flood"></option>
+              <option value="Hail"></option>
+              <option value="Hurricane"></option>
+              <option value="Thunderstorm"></option>
+              <option value="Tornado"></option>
+            </datalist>
+          </label>
+
+          <label class="label-top">Storm Severity:
+            <div>
+              <input type="range" name="storm-severity" min="1" max="10"
+                oninput="adjustSeverity(this.value)"
+                onchange="adjustSeverity(this.value)">
+              <label id="storm-severity-label">6</label>
+            </div>
+          </label>
+
+          <label class="label-top">Storm Region:
+            <select name="storm-region">
+              <option selected disabled>Select Value ...</option>
+              <option value="preston">Preston</option>
+              <option value="soda-springs">Soda Springs</option>
+              <option value="fish-haven">Fish Haven</option>
+            </select>
+          </label>
+
+          <div class="label">User In Danger?</div>
+          <label class="label-right"><input type="radio" name="danger-level" value="yes">Yes</label>
+          <label class="label-right"><input type="radio" name="danger-level" value="maybe">Maybe</label>
+          <label class="label-right"><input type="radio" name="danger-level" value="not">No</label>
+
+          <label class="label-top">Comments:<textarea name="comments" cols="30" rows="5"></textarea></label>
+        </fieldset>
+
+        <input class="submitBtn" type="submit" value="File Report"></input>
+      </form>
     </div>
   </main>
 
@@ -133,7 +138,7 @@
   <script src="js/footerDates.js"></script>
   <script src="js/hamburgerMenu.js"></script>
   <script src="js/headerBanner.js"></script>
-  <script src="js/lazyLoad.js"></script>
+  <script src="js/stormCenter.js"></script>
 </body>
 
 </html>
