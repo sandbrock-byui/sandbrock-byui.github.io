@@ -337,6 +337,7 @@ form label.label-top>input,
 form label.label-top>select,
 form label.label-top>textarea {
   -webkit-appearance: none;
+  background-color: white;
   border: solid 1px #999;
   border-radius: 4px;
   box-sizing: border-box;
