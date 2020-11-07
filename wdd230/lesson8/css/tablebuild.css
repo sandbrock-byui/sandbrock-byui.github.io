@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 :root {
   --even-row-background: #e7ffed;
   --header-background: #7fb9c2;
@@ -8,6 +10,11 @@
 body {
   font-family: Ubuntu, sans-serif;
   font-size: 1.2em;
+}
+
+body>div {
+  margin: 0 auto;
+  max-width: 350px;
 }
 
 table {
@@ -37,27 +44,22 @@ thead tr {
   font-weight: bold;
 }
 
+tbody tr {
+  background-color: var(--odd-row-background);
+}
+
 tbody tr:nth-child(even) {
   background-color: var(--even-row-background);
 }
 
-tbody tr:nth-child(odd) {
-  background-color: var(--odd-row-background);
+tbody tr>td[title~=black-friday] {
+  font-style: italic;
 }
 
 tfoot tr {
   background-color: var(--header-background);
   color: black;
   font-size: .75em;
-}
-
-#content {
-  margin: 0 auto;
-  max-width: 350px;
-}
-
-.highlight-day {
-  font-style: italic;
 }
 
 .highlight-goal {
