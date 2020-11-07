@@ -66,14 +66,11 @@
             </datalist>
           </label>
 
-          <label class="label-top">Storm Severity:
-            <div>
-              <input type="range" name="storm-severity" min="1" max="10"
-                oninput="adjustSeverity(this.value)"
-                onchange="adjustSeverity(this.value)">
-              <label id="storm-severity-label">6</label>
-            </div>
-          </label>
+          <label class="label-top" for="storm-severity">Storm Severity:</label>
+          <input id="storm-severity" type="range" name="storm-severity" min="1" max="10" value="5"
+            oninput="adjustSeverity(this.value)"
+            onchange="adjustSeverity(this.value)">
+          <span id="storm-severity-label">5</span>
 
           <label class="label-top">Storm Region:
             <select name="storm-region">
@@ -92,7 +89,7 @@
           <label class="label-top">Comments:<textarea name="comments" cols="30" rows="5"></textarea></label>
         </fieldset>
 
-        <input class="submitBtn" type="submit" value="File Report"></input>
+        <input class="submitBtn" type="submit" value="File Report">
       </form>
     </div>
   </main>
