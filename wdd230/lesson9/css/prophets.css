@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+:root {
+  /* Original:
+  --border-color: #9999BB;
+  --header-color: #5D5D9E;
+  --background-color: #B9B9CC;
+  */
+  --border-color: #4d685a;
+  --header-color: #4fb286;
+  --background-color: #546d64;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: var(--header-color);
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+div.cards {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0 auto;
+  max-width: 13rem;
+}
+
+section {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  padding: .75rem;
+  text-align: center;
+}
+
+section h2 {
+  color: var(--header-color);
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
+  margin: 0 0 .5rem 0;
+}
+
+section p {
+  margin: .1rem;
+  font-size: .85rem;
+}
+
+section img {
+  box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.75);
+  height: auto;
+  margin-top: .5rem;
+  width: 60%;
+}
+
+footer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 32.5em) {
+  div.cards {
+    grid-template-columns: 1fr 1fr;
+    max-width: 26.5rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  div.cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 52.5rem;
+  }
+}
