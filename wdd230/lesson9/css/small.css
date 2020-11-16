@@ -256,6 +256,10 @@ article.main-summary p:not(:first-child) {
   flex-direction: column-reverse;
 }
 
+.article-body-details p:not(:first-of-type) {
+  margin-top: 1rem;
+}
+
 .main-article img {
   display: block;
   margin: 0 auto;
@@ -310,7 +314,7 @@ article.main-summary p:not(:first-child) {
 }
 
 /*********************
- * Main>Form
+ * Main > Storm Form
  *********************/
 #storm-form {
   margin: 0;
@@ -391,6 +395,49 @@ form input.submitBtn {
   border-radius: .5rem;
   padding: 1rem;
 }
+
+ /*********************
+ * Main > Town Data
+ *********************/
+#town-data {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+#town-data > div {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.15);
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+#town-data h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+#town-data img {
+  height: auto;
+  max-width: 400px;
+  width: 85%;
+}
+
+#town-data p.town-data {
+  margin-top: 1rem;
+}
+
+#town-data p.town-motto {
+  font-size: .8em;
+}
+
+#town-data picture {
+  display: block;
+  margin-top: 1rem;
+}
+
 /*********************
  * Footer
  *********************/
@@ -399,6 +446,11 @@ footer {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   color: var(--footer-text);
   padding: 1rem 0;
+}
+
+footer a,
+footer a:visited {
+  color: white;
 }
 
 footer article {

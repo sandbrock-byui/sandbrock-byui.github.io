@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Weather Gallery Page for Brandon Rock in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <title>Weather Gallery Page</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-wide">
+      <section class="title-bar">
+        <picture class="logo">
+          <img src="images/TheWeatherLoungeLogo2-small.png" alt="The Weather Lounge logo">
+        </picture>
+
+        <div class="headings">
+          <h1>The Weather Lounge</h1>
+          <p class="subtitle">Making Weather Simple</p>
+        </div>
+
+        <h1 class="hamburger"><span class="hamburgerButton">&#9776;</span></h1>
+      </section>
+    </div>
+
+    <nav>
+      <ul class="navigation">
+        <li class="navigation-active"><a href="#">Home</a></li>
+        <li><a href="preston-9.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter-9.html">Storm Center</a></li>
+        <li><a href="gallery-9.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="main-title">Today's Highlights</h2>
+
+    <picture class="hero">
+      <source srcset="images/home-hero400.jpg" media="(max-width: 400px)">
+      <source srcset="images/home-hero650.jpg" media="(max-width: 650px)">
+      <source srcset="images/home-hero930.jpg" media="(max-width: 930px)">
+      <img src="images/home-hero930.jpg" alt="Home hero">
+    </picture>
+
+    <article class="main-article">
+      <header>
+        <h3>Weather Story</h3>
+      </header>
+
+      <div class="article-body">
+        <div class="article-body-details">
+          <picture class="article-picture"><img src="images/home-article250.jpg" alt="Article photo"></picture>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra vel nisl eu mollis. Quisque posuere
+            sem
+            vel
+            nunc dictum, vitae tincidunt turpis commodo. Aliquam ut gravida lacus. Aenean faucibus convallis turpis a
+            consectetur. Duis id nibh id purus vehicula faucibus. Donec ex elit, commodo et ex vel, ultricies volutpat
+            nisi.
+            Aenean non purus consequat, porttitor turpis eget, sollicitudin nisi. Vivamus in ante turpis. Nullam
+            vulputate
+            mauris a vulputate maximus. Etiam accumsan odio a orci porttitor, id porta metus convallis. Nulla vitae
+            fermentum
+            dui. Vestibulum accumsan pulvinar nibh eget tempor. Fusce vel pulvinar neque.</p>
+
+          <p>Donec tincidunt molestie aliquet. Etiam eget nisl gravida, posuere odio a, faucibus risus. Fusce tellus
+            purus,
+            rhoncus id pretium at, condimentum ac est. Integer eu rutrum leo. Suspendisse turpis nisi, interdum a ex in,
+            aliquet lobortis nunc. Ut iaculis convallis velit, et aliquam purus euismod eu. Aenean ac gravida lorem. Sed
+            consequat, lacus non finibus euismod, neque ipsum maximus urna, et auctor libero quam a dui. Morbi pharetra
+            dui
+            vel mollis dignissim. Quisque luctus malesuada metus, non eleifend purus pretium ac. Fusce quam enim,
+            scelerisque
+            eget arcu sit amet, dictum scelerisque quam. Cras lobortis leo vitae enim pulvinar, rhoncus euismod mauris
+            porta.
+            Phasellus efficitur sodales nunc, ac tristique tellus fermentum eu. Proin rhoncus justo ultrices purus
+            vulputate,
+            quis ultrices tortor vehicula.</p>
+
+          <p>Maecenas dapibus magna quam, et consequat augue placerat vel. Sed id sapien ut enim congue malesuada et id
+            mi.
+            Phasellus venenatis vestibulum lorem non iaculis. Mauris volutpat ligula quis nulla ullamcorper, non
+            lobortis
+            lorem tempor. Aliquam id turpis gravida nunc facilisis condimentum in sed eros. Nullam tempor, lectus ac
+            commodo
+            interdum, ligula risus imperdiet dolor, sed varius dolor velit non purus. Donec efficitur mauris
+            pellentesque,
+            finibus quam ac, blandit metus. Aenean pharetra lacus urna, quis aliquam ipsum fermentum a. Integer
+            ullamcorper
+            et
+            sapien non consectetur. Maecenas vitae odio non lorem dignissim pellentesque. Sed in lectus sit amet felis
+            porttitor suscipit at id ante. Quisque vel tincidunt sem, ut laoreet ipsum.</p>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <header>
+        <h3>Town Events</h3>
+      </header>
+
+      <div id="town-data"></div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-centered">
+      <div class="footer-contact">
+        <div class="footer-contact-details">
+          <section>
+            <h4>Contact Information</h4>
+            <div class="contact-info">
+              <p><img src="images/icon-email.svg" alt="Email Address" class="icon-small">support@theweatherlounge.com
+              </p>
+              <p><img src="images/icon-telephone.svg" alt="Phone" class="icon-small"> 801-122-1223</p>
+            </div>
+          </section>
+
+          <div class="footer-social-media">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt="Facebook icon"
+                class="icon-touch"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/icon-instagram.svg"
+                alt="Instagram icon" class="icon-touch"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/icon-twitter.svg" alt="Twitter icon"
+                class="icon-touch"></a>
+          </div>
+        </div>
+
+        <picture class="footer-map">
+          <source srcset="images/map400.jpg" media="(max-width: 400px)">
+          <img src="images/map520.jpg" alt="Map" class="footer-map">
+        </picture>
+      </div>
+
+      <div class="footer-info">
+        <p>&#169; The Weather Lounge | Attributions | Brandon Rock | <a href="home-wireframes.html">Wireframes</a></p>
+        <p id="current-date"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/fonts.js"></script>
+  <script src="js/footerDates.js"></script>
+  <script src="js/hamburgerMenu.js"></script>
+  <script src="js/headerBanner.js"></script>
+  <script src="js/townData.js"></script>
+</body>
+
+</html>

@@ -105,6 +105,17 @@
   }
 
   /*********************
+  * Main > Town Data
+  *********************/
+  #town-data {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #town-data > div {
+    display: block;
+  }
+
+  /*********************
     * Footer
     *********************/
   .footer-contact {
