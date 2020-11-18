@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Weather Gallery Page for Brandon Rock in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <title>Weather Gallery Page</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-wide">
+      <section class="title-bar">
+        <picture class="logo">
+          <img src="images/TheWeatherLoungeLogo2-small.png" alt="The Weather Lounge logo">
+        </picture>
+
+        <div class="headings">
+          <h1>The Weather Lounge</h1>
+          <p class="subtitle">Making Weather Simple</p>
+        </div>
+
+        <h1 class="hamburger"><span class="hamburgerButton">&#9776;</span></h1>
+      </section>
+    </div>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="preston-10.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter-10.html">Storm Center</a></li>
+        <li class="navigation-active"><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="main-title">Weather Gallery</h2>
+
+    <div class="gallery-container">
+      <div class="gallery-image-container">
+        <div class="gallery-image">
+          <img src="https://via.placeholder.com/300x400.png?text=Snowy%20Ski%20Resort" alt="Snowy Ski Resort"
+            data-src="images/weather1.jpg">
+          <p>Snowy Ski Resort</p>
+        </div>
+      </div>
+      <div class="gallery-image-container">
+        <div class="gallery-image">
+          <img src="https://via.placeholder.com/300x400.png?text=Snow%20Tree" alt="Snowy Tree"
+            data-src="images/weather2.jpg">
+            <p>Snowy Tree</p>
+          </div>
+      </div>
+      <div class="gallery-image-container">
+        <div class="gallery-image">
+          <img src="https://via.placeholder.com/300x400.png?text=Snowy%20Bridge" alt="Snowy Bridge"
+            data-src="images/weather3.jpg">
+            <p>Snowy Bridge</p>
+        </div>
+      </div>
+      <div class="gallery-image-container">
+        <div class="gallery-image">
+          <img src="https://via.placeholder.com/300x400.png?text=Snowy%20Mountain%20Sunset" alt="Snowy Mountain Sunset"
+            data-src="images/weather4.jpg">
+            <p>Snowy Mountain Sunset</p>
+        </div>
+      </div>
+      <div class="gallery-image-container">
+        <div class="gallery-image">
+          <img src="https://via.placeholder.com/300x400.png?text=Lightning%20In%20the%20Sky" alt="Lightning In the Sky"
+            data-src="images/weather5.jpg">
+            <p>Lightning at Night</p>
+        </div>
+      </div>
+      <div class="gallery-image-container">
+        <div class="gallery-image">
+          <img src="https://via.placeholder.com/300x400.png?text=Sunny%20Mountain%20Highway" alt="Sunny Mountain Highway"
+            data-src="images/weather6.jpg">
+            <p>Sunny Mountain Highway</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-centered">
+      <div class="footer-contact">
+        <div class="footer-contact-details">
+          <section>
+            <h4>Contact Information</h4>
+            <div class="contact-info">
+              <p><img src="images/icon-email.svg" alt="Email Address" class="icon-small">support@theweatherlounge.com
+              </p>
+              <p><img src="images/icon-telephone.svg" alt="Phone" class="icon-small"> 801-122-1223</p>
+            </div>
+          </section>
+
+          <div class="footer-social-media">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt="Facebook icon"
+                class="icon-touch"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/icon-instagram.svg"
+                alt="Instagram icon" class="icon-touch"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/icon-twitter.svg" alt="Twitter icon"
+                class="icon-touch"></a>
+          </div>
+        </div>
+
+        <picture class="footer-map">
+          <source srcset="images/map400.jpg" media="(max-width: 400px)">
+          <img src="images/map520.jpg" alt="Map" class="footer-map">
+        </picture>
+      </div>
+
+      <div class="footer-info">
+        <p>&#169; The Weather Lounge | Attributions | Brandon Rock</p>
+        <p id="current-date"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/fonts.js"></script>
+  <script src="js/footerDates.js"></script>
+  <script src="js/hamburgerMenu.js"></script>
+  <script src="js/headerBanner.js"></script>
+  <script src="js/lazyLoad.js"></script>
+</body>
+
+</html>
