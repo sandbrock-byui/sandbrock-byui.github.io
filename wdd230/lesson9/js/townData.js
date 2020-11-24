@@ -11,7 +11,7 @@ const createTownElement = function(towns, townName) {
   let townEl = document.createElement("div");
 
   let townTextEl = document.createElement("div");
-  townTextEl.classList.toggle("town-text")
+  townTextEl.classList.toggle("town-text");
   townEl.appendChild(townTextEl);
 
   let townTitleEl = document.createElement("h2");
