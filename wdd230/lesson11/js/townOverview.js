@@ -1,11 +1,12 @@
-
-const getTownData = function(towns, townName) {
+// Find an entry in the town array
+const findEntryForTown = (towns, townName) => {
   let town = towns.find((town) => town.name === townName); 
   return town;
 }
 
-const createTownElement = function(towns, townName) {
-  let townData = getTownData(towns, townName);
+// Create an element that can be nested in the HTML
+const createTownElement = (towns, townName) => {
+  let townData = findEntryForTown(towns, townName);
   if (!townData) return;
 
   let townEl = document.createElement("div");
@@ -49,26 +50,28 @@ const createTownElement = function(towns, townName) {
   return townEl;
 }
 
-const addTownElement = function(towns, townDataRoot, townName) {
+// Create and add a town element to the HTML
+const addTownElement = (towns, townDataRoot, townName) => {
   let townElement = createTownElement(towns, townName);
   if (!townElement) return;
   townDataRoot.appendChild(townElement);
 }
 
-const loadTownData = async() => {
+// Load an overview of towns
+const loadTownOverview = async() => {
   try {
     let response = await fetch("https://byui-cit230.github.io/weather/data/towndata.json");
     let townData = await response.json();
     let towns = townData.towns;
     
-    townDataRoot = document.getElementById("town-data");
+    townDataRoot = document.getElementById("town-overview");
 
-    addTownElement(towns, townDataRoot, "Fish Haven");
     addTownElement(towns, townDataRoot, "Preston");
     addTownElement(towns, townDataRoot, "Soda Springs");
+    addTownElement(towns, townDataRoot, "Fish Haven");
   } catch(error) {
     console.error("Error retrieving town data: " + error);
   }
 }
 
-loadTownData();
+loadTownOverview();

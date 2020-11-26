@@ -217,23 +217,49 @@ main article header {
 /*********************
  * Main > Summary
  *********************/
-article.main-summary p:not(:first-child) {
+#weather-summary p:not(:first-child) {
   margin-top: .3rem;
+}
+
+#weather-summary > div.article-body {
+  padding: 1rem;
+}
+
+#weather-summary > div.article-body > div {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  box-shadow: -3px 10px 41px -6px rgba(0,0,0,0.75);
+  padding: 1rem;
+  text-align: center;
+}
+
+#weather-summary > div.article-body > div p:not(:nth-of-type(1)) {
+  margin-top: 0.5rem;
 }
 
 /*********************
  * Main > Forecast
  *********************/
 .five-day-forecast {
+  padding: 1rem;
+}
+
+.five-day-forecast > div {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  box-shadow: -3px 10px 41px -6px rgba(0,0,0,0.75);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  padding: 1rem;
+  margin: 0 auto;
+  max-width: 550px;
 }
 
 .forecast-entry {
   background-color: white;
   border: 1px solid black;
   flex: 1 1 auto;
+  padding-bottom: 0.5rem;
 }
 
 .forecast-entry header {
@@ -403,15 +429,15 @@ form input.submitBtn {
 }
 
  /*********************
- * Main > Town Data
+ * Main > Town Overview
  *********************/
-#town-data {
+#town-overview {
   padding: 1rem;
   display: grid;
   gap: 1rem;
 }
 
-#town-data > div {
+#town-overview > div {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.15);
@@ -419,32 +445,52 @@ form input.submitBtn {
   text-align: center;
 }
 
-#town-data h2 {
+#town-overview h2 {
   font-size: 1.6em;
   font-weight: bold;
   margin-top: 1rem;
 }
 
-#town-data img {
+#town-overview img {
   height: auto;
   max-width: 400px;
   width: 85%;
 }
 
-#town-data p.town-data {
+#town-overview p.town-data {
   margin-top: 1rem;
 }
 
-#town-data p.town-motto {
+#town-overview p.town-motto {
   font-size: .8em;
 }
 
-#town-data picture {
+#town-overview picture {
   display: block;
   margin-top: 1rem;
 }
 
 /*********************
+ * Main > Upcoming Events
+ *********************/
+#upcoming-events {
+  padding: 1rem;
+}
+
+#upcoming-events > div {
+  background-color: white;
+  box-shadow: -3px 10px 41px -6px rgba(0,0,0,0.75);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+}
+
+#upcoming-events p:not(:nth-of-type(1)) {
+  margin-top: 0.5rem;
+}
+
+ /*********************
  * Footer
  *********************/
 footer {

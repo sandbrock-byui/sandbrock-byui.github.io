@@ -41,7 +41,7 @@
   /*********************
     * Main > Summary
     *********************/
-  .main-summary {
+  #weather-summary {
     background-color: rgba(74, 91, 94, 0.75);
     box-shadow: 10px 10px 34px 0px rgba(0, 0, 0, 0.75);
     color: white;
@@ -52,7 +52,7 @@
     top: 5.5rem;
   }
 
-  .main-summary header {
+  #weather-summary header {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7a969b+0,394648+100 */
     background: #7a969b;
     /* Old browsers */
@@ -67,6 +67,13 @@
 
     color: black;
     padding: 0.5rem 0;
+  }
+
+  #weather-summary > div.article-body > div {
+    background-color: inherit;
+    border: none;
+    box-shadow: none;
+    padding: 0;
   }
 
   /*********************
@@ -106,13 +113,13 @@
   }
 
   /*********************
-  * Main > Town Data
+  * Main > Town Overview
   *********************/
-  #town-data {
+  #town-overview {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  #town-data > div {
+  #town-overview > div {
     display: block;
   }
 
