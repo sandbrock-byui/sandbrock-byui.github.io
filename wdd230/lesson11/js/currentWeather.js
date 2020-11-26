@@ -3,7 +3,7 @@ const calculateCurrentWeatherURL = city => {
   if (city.id)
     return `https://api.openweathermap.org/data/2.5/weather?id=${city.id}&appid=e8edfc62b36c5a326c0f2cd3914c0789&units=imperial`;
   else if (city.latitude && city.longitude)
-    return `https://api.openweathermap.org/data/2.5/weather?lat=${city.latitude}&long=${city.longitude}&appid=e8edfc62b36c5a326c0f2cd3914c0789&units=imperial`;
+    return `https://api.openweathermap.org/data/2.5/weather?lat=${city.latitude}&lon=${city.longitude}&appid=e8edfc62b36c5a326c0f2cd3914c0789&units=imperial`;
 };
 
 // Get the current weather report and display it
@@ -28,9 +28,9 @@ const loadCurrentWeatherReport = () => {
 
       // Assign summary
       document.getElementById("summary-description").textContent = description;
-      document.getElementById("summary-temperature").textContent = temperature + "℉";
+      document.getElementById("summary-temperature").textContent = Math.round(temperature) + "℉";
       document.getElementById("summary-humidity").textContent = humidity + "%";
-      document.getElementById("summary-wind-speed").textContent = windspeed + "mph";
+      document.getElementById("summary-wind-speed").textContent = Math.round(windspeed) + "mph";
 
       // Calculate the wind chill
       let windchill = "N/A";
@@ -41,7 +41,7 @@ const loadCurrentWeatherReport = () => {
       document.getElementById("summary-wind-chill").textContent = windchill;
     })
     .catch(error => {
-      console.error("An error occurred fetching weather for Preston: " + error);
+      console.error("An error occurred fetching weather: " + error);
     });
 };
 

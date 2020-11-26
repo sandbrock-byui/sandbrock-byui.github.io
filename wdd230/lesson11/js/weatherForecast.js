@@ -5,7 +5,7 @@ const calculateWeatherForecastURL = city => {
   if (city.id)
     return `https://api.openweathermap.org/data/2.5/forecast?id=${city.id}&appid=e8edfc62b36c5a326c0f2cd3914c0789&units=imperial`;
   else if (city.latitude && city.longitude)
-    return `https://api.openweathermap.org/data/2.5/forecast?lat=${city.latitude}&long=${city.longitude}&appid=e8edfc62b36c5a326c0f2cd3914c0789&units=imperial`;
+    return `https://api.openweathermap.org/data/2.5/forecast?lat=${city.latitude}&lon=${city.longitude}&appid=e8edfc62b36c5a326c0f2cd3914c0789&units=imperial`;
 };
 
 // Calculate the day of week name
@@ -41,13 +41,13 @@ const loadWeatherForecast = () => {
         icon.alt = curForecast.weather[0].main;
 
         // Set the temperature
-        document.querySelector(`.five-day-forecast > div > article:nth-child(${currentChild}) div`).textContent = curForecast.main.temp + "℉";
+        document.querySelector(`.five-day-forecast > div > article:nth-child(${currentChild}) div`).textContent = Math.round(curForecast.main.temp) + "℉";
 
         currentChild++;
       }
     })
     .catch(error => {
-      console.error("An error occurred fetching forecast for Preston: " + error);
+      console.error("An error occurred fetching forecast: " + error);
     });
 }
 

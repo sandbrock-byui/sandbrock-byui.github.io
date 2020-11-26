@@ -1,8 +1,8 @@
 const eventsURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
 // Find the entry for a single town within the town array
-const findEntryForTown = (towns, townName) => {
-  let town = towns.find((town) => town.name === townName);
+const findEntryForCity = (cities, cityName) => {
+  let town = cities.find((town) => town.name === cityName);
   return town;
 }
 
@@ -17,16 +17,16 @@ const addEventElement = (upcomingEventsRoot, eventData) => {
 const loadUpcomingEvents = async () => {
   try {
     let response = await fetch(eventsURL);
-    let allTownData = await response.json();
-    let towns = allTownData.towns;
+    let allCityData = await response.json();
+    let cities = allCityData.towns;
 
     upcomingEventsRoot = document.getElementById("upcoming-events");
     upcomingEventsWrapper = document.createElement("div");
     upcomingEventsRoot.appendChild(upcomingEventsWrapper);
 
-    let townName = upcomingEventsRoot.dataset.townName;
-    let townData = findEntryForTown(towns, townName);
-    townData.events.forEach(event => addEventElement(upcomingEventsWrapper, event));
+    let cityName = upcomingEventsRoot.dataset.cityName;
+    let cityData = findEntryForCity(cities, cityName);
+    cityData.events.forEach(event => addEventElement(upcomingEventsWrapper, event));
   } catch (error) {
     console.error("Error retrieving town data: " + error);
   }

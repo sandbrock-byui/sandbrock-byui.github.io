@@ -1,7 +1,7 @@
 
 const lazyLoadImage = (image) => {
-  image.src = image.getAttribute('data-src');
-  image.classList.add('lazy-loaded');
+  image.src = image.dataset.src;
+  //image.classList.add('lazy-loaded');
 }
 
 const imageObserverOptions = {};

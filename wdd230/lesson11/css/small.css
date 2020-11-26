@@ -334,7 +334,7 @@ main article header {
 
 .gallery-image img {
   display: block;
-  filter: blur(0.5em);
+  /*filter: blur(0.5em);*/
   height: auto;
   max-width: 300px;
   width: 100%;
