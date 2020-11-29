@@ -88,18 +88,23 @@
   /*********************
     * Main > Article
     *********************/
-  .article-body-details {
+  div.article-body div.article-body-details {
     display: block;
     position: relative;
   }
 
-  .article-picture {
-    float: right;
-    padding: 0 0 0 1rem;
-    width: 25%;
+  div.article-body div.article-body-details-large {
+    display: block;
+    position: relative;
   }
 
-  .main-article img {
+  div.article-body picture.article-picture {
+    float: right;
+    padding: 0 0 0 1rem;
+    width: 400px;
+  }
+
+  article.main-article div.article-body picture.article-picture img {
     display: inline;
   }
 

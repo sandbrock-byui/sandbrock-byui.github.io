@@ -283,25 +283,41 @@ main article header {
 /*********************
  * Main > Article
  *********************/
-.article-body-details {
+div.article-body div.article-body-details {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.article-body-details p:not(:first-of-type) {
+div.article-body div.article-body-details p {
   margin-top: 1rem;
 }
 
-.main-article img {
+div.article-body div.article-body-details-large p {
+  margin-top: 1rem;
+}
+
+div.article-body picture.article-picture {
   display: block;
+  padding: 1rem 0 0 0;
+}
+
+div.article-body picture.article-picture-large {
+  display: block;
+  padding: 0;
+}
+
+article.main-article div.article-body picture.article-picture img {
+  display: block;
+  height: auto;
   margin: 0 auto;
-  max-width: 250px;
   width: 100%;
 }
 
-.article-picture {
+article.main-article div.article-body picture.article-picture-large img {
   display: block;
-  padding: 1rem 0 0 0;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /*********************
