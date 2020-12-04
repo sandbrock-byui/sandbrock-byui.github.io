@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Nunito&display=swap');
+
+header {
+  background-color: #002e2c;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  margin: 0 auto;
+  max-width: 930px;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+h2.section-header:not(:nth-of-type(1)) {
+  margin-top: 1rem;
+}
+
+h2.section-header {
+  margin-bottom: 1rem;
+}
+
+main {
+  background-color: #a2a77f;
+  box-sizing: border-box;
+  display: block;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0 auto;
+  max-width: 930px; 
+  padding: 1rem;
+}
+
+/*** Site Map ***/
+picture {
+  display: block;
+  text-align: center;
+}
+
+picture img {
+  height: auto;
+  width: 60%;
+}
+
+/*** Color Scheme ***/
+table.color-scheme {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+table.color-scheme th,
+table.color-scheme tr,
+table.color-scheme td {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+table.color-scheme tr:nth-of-type(1) td {
+  background-color: #a2a77f;
+}
+
+table.color-scheme tr:nth-of-type(2) td {
+  background-color: #e3e7af;
+}
+
+table.color-scheme tr:nth-of-type(3) td {
+  background-color: #eff1c5;
+}
+
+table.color-scheme tr:nth-of-type(4) td {
+  background-color: #035e7b;
+  color: white;
+}
+
+table.color-scheme tr:nth-of-type(5) td {
+  background-color: #002e2c;
+  color: white;
+}
+
+/* Typography */
+table.typography {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+table.typography th,
+table.typography tr,
+table.typography td {
+  border: 1px solid black;
+  padding: 1rem;
+}
