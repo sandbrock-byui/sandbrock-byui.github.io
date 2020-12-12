@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Nunito&display=swap');
 
-header {
+header, footer {
   background-color: #002e2c;
   color: white;
   font-family: 'Nunito', sans-serif;
@@ -8,6 +8,10 @@ header {
   max-width: 930px;
   padding: 1.5rem 0;
   text-align: center;
+}
+
+picture.scoots-logo {
+  width: 300px;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -22,6 +26,10 @@ h2.section-header {
   margin-bottom: 1rem;
 }
 
+h3.section-header {
+  margin: 1rem 0;
+}
+
 main {
   background-color: #a2a77f;
   box-sizing: border-box;
@@ -29,6 +37,20 @@ main {
   font-family: 'Noto Sans JP', sans-serif;
   margin: 0 auto;
   max-width: 930px; 
+  padding: 1rem;
+}
+
+/*** Personas ***/
+table.personas {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+table.personas th,
+table.personas tr,
+table.personas td {
+  border: 1px solid black;
   padding: 1rem;
 }
 
@@ -79,7 +101,44 @@ table.color-scheme tr:nth-of-type(5) td {
   color: white;
 }
 
-/* Typography */
+/*** Elements ***/
+table.elements {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+table.elements th,
+table.elements tr,
+table.elements td {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+table.elements tr:nth-of-type(1) td {
+  background-color: #a2a77f;
+}
+
+table.elements tr:nth-of-type(2) td {
+  background-color: #002e2c;
+  color: white;
+}
+
+table.elements tr:nth-of-type(3) td {
+  background-color: #a2a77f;
+}
+
+table.elements tr:nth-of-type(4) td {
+  background-color: #035e7b;
+  color: white;
+}
+
+table.elements tr:nth-of-type(5) td {
+  background-color: #03536d;
+  color: #e3e7af;
+}
+
+/*** Typography ***/
 table.typography {
   border-collapse: collapse;
   margin: 0 auto;
@@ -91,4 +150,24 @@ table.typography tr,
 table.typography td {
   border: 1px solid black;
   padding: 1rem;
+}
+
+/* Wireframes */
+h3.wireframe-header {
+  text-align: center;
+}
+
+#home-wireframe-small {
+  margin: 0 auto;
+  width: 350px;
+}
+
+#home-wireframe-medium {
+  margin: 0 auto;
+  width: 650px;
+}
+
+#home-wireframe-large {
+  margin: 0 auto;
+  width: 900px;
 }
