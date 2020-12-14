@@ -16,9 +16,14 @@
 
   ul.navigation li {
     border-left: 1px solid rgba(0, 0, 0, .2);
+    display: block;
   }
 
   ul.navigation li a {
     text-align: center;
+  }
+
+  h1.hamburger {
+    display: none;
   }
 }

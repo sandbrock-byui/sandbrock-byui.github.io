@@ -47,10 +47,13 @@
   <main>
     <div class="hero">
       <picture class="hero">
-        <img src="https://via.placeholder.com/400x200.png?text=Hero+Image" alt="Hero">
+        <source srcset="images/home-hero400.jpg" media="(max-width: 400px)">
+        <source srcset="images/home-hero650.jpg" media="(max-width: 650px)">
+        <source srcset="images/home-hero930.jpg" media="(max-width: 930px)">
+        <img src="images/home-hero930.jpg" alt="Home hero">
       </picture>
 
-      <button class="call-to-action">Make a Reservation</button>
+      <div class="call-to-action">Make a Reservation</div>
     </div>
 
     <article>
@@ -60,7 +63,9 @@
 
       <div>
         <picture>
-          <img src="https://via.placeholder.com/380x150.png?text=Scooters" alt="Scooters">
+          <source srcset="images/home-scooters400.jpg" media="(max-width: 400px)">
+          <source srcset="images/home-scooters650.jpg" media="(max-width: 650px)">
+          <img src="images/home-scooters650.jpg" alt="Scooters">
         </picture>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur massa et leo semper fermentum.
@@ -85,7 +90,9 @@
 
       <div>
         <picture>
-          <img src="https://via.placeholder.com/380x150.png?text=ATVs" alt="ATVs">
+          <source srcset="images/home-atvs400.jpg" media="(max-width: 400px)">
+          <source srcset="images/home-atvs650.jpg" media="(max-width: 650px)">
+          <img src="images/home-atvs650.jpg" alt="ATVs">
         </picture>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur massa et leo semper fermentum.
@@ -110,7 +117,9 @@
 
       <div>
         <picture>
-          <img src="https://via.placeholder.com/380x150.png?text=Jeeps" alt="Jeeps">
+          <source srcset="images/home-jeeps400.jpg" media="(max-width: 400px)">
+          <source srcset="images/home-jeeps650.jpg" media="(max-width: 650px)">
+          <img src="images/home-jeeps650.jpg" alt="Jeeps">
         </picture>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur massa et leo semper fermentum.
@@ -135,9 +144,10 @@
 
       <div class="current-weather">
         <div>
-          <p>Current: <span>Sunny</span></p>
-          <p>Temperature: <span>70F</span></p>
-          <p>Wind: <span>4mph</span></p>
+          <p>Current: <span id="weather-description">N/A</span></p>
+          <p>Temperature: <span id="weather-temperature">N/A</span></p>
+          <p>Humidity: <span id="weather-humidity">N/A</span></p>
+          <p>Wind: <span id="weather-wind">N/A</span></p>
         </div>
       </div>
     </article>
@@ -190,30 +200,35 @@
   </main>
 
   <footer class="main-footer">
-    <p>Copyright Scoots | Contact Us</p>
+    <p>&#169; Scoots Rentals | Brandon Rock | <a href="attributions.html">Attributions</a> | <a href="contact.html">Contact Us</a></p>
     <div>
       <div>
         <picture>
-          <img src="https://via.placeholder.com/30x30.png?text=F" alt="Facebook Icon">
+          <a href="https://www.facebook.com"><img src="images/icon-facebook.svg" alt="Facebook Icon"></a>
         </picture>
-        <p>Facebook</p>
+        <p><a href="https://www.facebook.com">Facebook</a></p>
       </div>
 
       <div>
         <picture>
-          <img src="https://via.placeholder.com/30x30.png?text=I" alt="Instagram Icon">
+          <a href="https://www.instagram.com"><img src="images/icon-instagram.svg" alt="Instagram Icon"></a>
         </picture>
-        <p>Instagram</p>
+        <p><a href="https://www.instagram.com">Instagram</a></p>
       </div>
 
       <div>
         <picture>
-          <img src="https://via.placeholder.com/30x30.png?textT" alt="Twitter Icon">
+          <a href="https://www.twitter.com"><img src="images/icon-twitter.svg" alt="Twitter Icon"></a>
         </picture>
-        <p>Twitter</p>
+        <p><a href="https://www.twitter.com">Twitter</a></p>
       </div>
     </div>
   </footer>
+
+  <script src="js/hamburgerMenu.js"></script>
+  <script src="js/callToAction.js"></script>
+  <script src="js/currentWeather.js"></script>
+  <script src="js/weatherForecast.js"></script>
 </body>
 
 </html>
