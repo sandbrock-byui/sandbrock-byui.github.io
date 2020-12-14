@@ -345,6 +345,11 @@ form input.submitBtn:hover {
   color: var(--nav-text-hover);
 }
 
+/*** Main > Tours ***/
+ul.mayan-ruins {
+  list-style: none;
+}
+
 /*** Footer ***/
 footer {
   font-size: .6rem;
