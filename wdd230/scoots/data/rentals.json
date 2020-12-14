@@ -2,14 +2,18 @@
   "rentals": [
     {
       "type": "~Honda Metro Scooter",
+      "image": "rental-honda-metro",
+      "description": "It is a sleek and light-weight scooter that carries one person. This scooter as our most popular package. It uses very little gas.",
       "maxPersons": 1,
       "reservationHalfDay": 20, 
       "reservationFullDay": 30,
       "walkInHalfDay": 25, 
-      "walkInfullDay": 35 
+      "walkInFullDay": 35 
     },
     {
       "type": "~Honda Dio Scooter",
+      "image": "rental-honda-dio",
+      "description": "It is a moderate-sized scooter that can comfortably carry two people. It is perfect for short-distance drives.",
       "maxPersons": 2,
       "reservationHalfDay": 30, 
       "reservationFullDay": 40,
@@ -18,6 +22,8 @@
     },
     {
       "type": "~Honda PCX150 Scooter",
+      "image": "rental-honda-pcx150",
+      "description": "It is a moderate-sized scooter that can comfortably carry two people longer distances. It has a higher top-speed and carries a little more horsepower than the Dio.",
       "maxPersons": 2,
       "reservationHalfDay": 40, 
       "reservationFullDay": 50,
@@ -26,6 +32,8 @@
     },
     {
       "type": "Honda Pioneer ATV",
+      "image": "rental-honda-pioneer",
+      "description": "It is the complete off-road package. It can take you and your family or friends to many off-road destinations.",
       "maxPersons": 4,
       "reservationHalfDay": 50, 
       "reservationFullDay": 70 ,
@@ -34,6 +42,8 @@
     },
     {
       "type": "Jeep Wrangler - 2 door",
+      "image": "rental-jeep-wrangler-2-door",
+      "description": "It is a top-performing vehicle that can sustain highway speeds as well as handle off-road terrain.",
       "maxPersons": 4,
       "reservationHalfDay": 60, 
       "reservationFullDay": 85,
@@ -42,6 +52,8 @@
     },
     {
       "type": "Jeep Wrangler - 4 door with a/c",
+      "image": "rental-jeep-wrangler-4-door",
+      "description": "It is the premium package for on-road and off-road performance. It includes air-conditioning to keep you and your guests comfortable the entire day.",
       "maxPersons": 5,
       "reservationHalfDay": 70, 
       "reservationFullDay": 100,

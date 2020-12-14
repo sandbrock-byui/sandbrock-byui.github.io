@@ -252,6 +252,25 @@ div.weather-forecast article img {
   max-width: 50px;
 }
 
+/*** Rentals ***/
+p.rental-description {
+  margin-bottom: 1rem;
+}
+
+table.rentals {
+  border-collapse: collapse;
+  font-size: .8rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+table.rentals th,
+table.rentals tr,
+table.rentals td {
+  border: 1px solid black;
+  padding: .5rem;
+}
+
 /*** Footer ***/
 footer {
   font-size: .6rem;
