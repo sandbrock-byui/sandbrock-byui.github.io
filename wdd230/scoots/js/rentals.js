@@ -15,8 +15,6 @@ const showRentals = (rentals) => {
   const rentalsRoot = document.getElementById('rentals');
 
   for (const rental of rentals.rentals) {
-    console.log(rental);
-
     // Article
     const article = document.createElement('article');
 

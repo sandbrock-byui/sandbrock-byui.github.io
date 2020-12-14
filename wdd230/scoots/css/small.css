@@ -252,7 +252,7 @@ div.weather-forecast article img {
   max-width: 50px;
 }
 
-/*** Rentals ***/
+/*** Main > Rentals ***/
 p.rental-description {
   margin-bottom: 1rem;
 }
@@ -269,6 +269,80 @@ table.rentals tr,
 table.rentals td {
   border: 1px solid black;
   padding: .5rem;
+}
+
+/*** Main > Reservation Form ***/
+#reservation-form {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+#reservation-quantity {
+  display: inline-block;
+}
+
+#reservation-quantity-label {
+  margin-left: 1rem;
+}
+
+form fieldset {
+  border: 1px solid rgba(0, 0, 0, .3);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+form label.label-top, 
+form div.label {
+  display: block;
+  padding-top: 1rem;
+}
+
+form label.label-top>input,
+form label.label-top>select,
+form label.label-top>textarea {
+  /*-webkit-appearance: none;*/
+  background-color: white;
+  border: solid 1px #999;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  font-size: 1rem;
+  max-width: 20rem;
+  padding: .75rem;
+  width: 100%;
+}
+
+form label.label-top>select {
+  width: 100%;
+}
+
+form label.label-right {
+  display: block;
+  padding: .75rem 0;
+}
+
+form label.label-top input:required {
+  border-left: red solid 6px;
+}
+
+form label.label-top input:required:valid {
+  border-left: green solid 6px;
+}
+
+form input.submitBtn {
+  background-color: var(--nav-background);
+  border-radius: .5rem;
+  color: white;
+  cursor: pointer;
+  display: block;
+  margin: 0 2%;
+  max-width: 20.75rem;
+  padding: .75rem 1.5rem;
+  width: 96%;
+}
+
+form input.submitBtn:hover {
+  color: var(--nav-text-hover);
 }
 
 /*** Footer ***/
