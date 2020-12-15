@@ -225,7 +225,7 @@ div.weather-forecast {
   padding: 1rem;
 }
 
-div.weather-forecast div {
+div.weather-forecast > div {
   background-color: rgba(255, 255, 255, .4);
   border-radius: 3px;
   box-shadow: 10px 7px 40px -18px rgba(0, 0, 0, 0.75);
@@ -236,19 +236,21 @@ div.weather-forecast div {
   padding: 1rem;
 }
 
-div.weather-forecast article {
+div.forecast-day {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: .5rem;
+  width: 55px;
 }
 
-div.weather-forecast article header p {
+div.forecast-day div.forecast-header {
   margin-bottom: .25rem;
 }
 
-div.weather-forecast article img {
+div.forecast-day img {
   display: block;
   height: auto;
+  margin: 0 auto;
   max-width: 50px;
 }
 

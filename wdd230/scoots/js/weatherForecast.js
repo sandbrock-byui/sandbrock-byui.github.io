@@ -19,6 +19,7 @@ const loadWeatherForecast = () => {
   fetch(forecastURL)
     .then(response => response.json())
     .then(forecast => {
+      console.log(forecast);
       let currentChild = 1;
 
       for (const curForecast of forecast.list) {
@@ -26,15 +27,15 @@ const loadWeatherForecast = () => {
         if (currentChild > 3) continue;
 
         // Set the day of the week
-        document.querySelector(`.weather-forecast > div > article:nth-child(${currentChild}) > header > p`).textContent = getDayOfWeek(curForecast.dt_txt);
+        document.querySelector(`div.forecast-day:nth-of-type(${currentChild}) > div.forecast-header`).textContent = getDayOfWeek(curForecast.dt_txt);
 
         // Set the icon
-        let icon = document.querySelector(`.weather-forecast > div > article:nth-child(${currentChild}) img`);
+        let icon = document.querySelector(`div.forecast-day:nth-of-type(${currentChild}) img`);
         icon.src = "https://openweathermap.org/img/w/" + curForecast.weather[0].icon + '.png';
         icon.alt = curForecast.weather[0].main;
 
         // Set the temperature
-        document.querySelector(`.weather-forecast > div > article:nth-child(${currentChild}) > p`).textContent = Math.round(curForecast.main.temp) + "℉";
+        document.querySelector(`div.forecast-day:nth-of-type(${currentChild}) > div.forecast-temperature`).textContent = Math.round(curForecast.main.temp) + "℉";
 
         currentChild++;
       }
