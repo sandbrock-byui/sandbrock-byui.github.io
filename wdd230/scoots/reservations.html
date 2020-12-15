@@ -51,7 +51,7 @@
       </header>
     </article>
 
-    <div id="reservation-form">
+    <div id="input-form">
       <form action="create-reservation.html">
         <fieldset>
           <legend>New Reservation</legend>
@@ -73,6 +73,7 @@
             onchange="adjustQuantity(this.value)">
           <span id="reservation-quantity-label">1</span>
 
+          <label class="label-top">Name: <input type="text" name="name" required></label>
           <label class="label-top">Phone Number: <input type="tel" name="phone" required></label>
           <label class="label-top">Email: <input type="email" name="email" placeholder="username@gmail.com" required></label>
 

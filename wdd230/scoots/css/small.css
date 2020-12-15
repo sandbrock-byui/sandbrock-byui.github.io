@@ -272,7 +272,7 @@ table.rentals td {
 }
 
 /*** Main > Reservation Form ***/
-#reservation-form {
+#input-form {
   margin: 0;
   padding: 1rem 0;
 }
@@ -357,6 +357,15 @@ p.terms-of-service-end {
 /*** Main > Tours ***/
 ul.mayan-ruins {
   list-style: none;
+}
+
+/*** Main > Contact Us ***/
+#contact-map {
+  display: block;
+  height: 250px;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 98%;
 }
 
 /*** Footer ***/
