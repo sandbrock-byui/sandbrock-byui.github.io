@@ -70,6 +70,12 @@ div {
   padding: 1rem;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /*** Header ***/
 div.title-bar {
   align-items: center;
