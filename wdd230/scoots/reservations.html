@@ -64,12 +64,12 @@
 
           <label class="label-top">Rental Type:
             <select id="rental-type" name="rental-type" required>
-              <option selected disabled>Select Value ...</option>
+              <option selected disabled></option>
             </select>
           </label>
 
           <label class="label-top" for="reservation-quantity">Quantity:</label>
-          <input id="reservation-quantity" type="range" name="reservation-quantity" min="1" max="10" value="1" required
+          <input id="reservation-quantity" type="range" name="reservation-quantity" min="1" max="10" value="1"
             oninput="adjustQuantity(this.value)" onchange="adjustQuantity(this.value)">
           <span id="reservation-quantity-label">1</span>
 
@@ -99,6 +99,9 @@
   <footer class="main-footer">
     <p>&#169; Scoots Rentals | Brandon Rock | <a href="attributions.html">Attributions</a> | <a
         href="contact.html">Contact Us</a></p>
+
+    <p class="last-modified">Last Modified: <span id="last-modified">N/A</span></p>
+
     <div>
       <div>
         <a href="https://www.facebook.com">
@@ -132,6 +135,7 @@
   <script src="js/hamburgerMenu.js"></script>
   <script src="js/rentalTypeField.js"></script>
   <script src="js/quantityField.js"></script>
+  <script src="js/lastModified.js"></script>
 </body>
 
 </html>

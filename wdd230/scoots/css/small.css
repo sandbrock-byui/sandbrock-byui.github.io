@@ -378,7 +378,7 @@ ul.mayan-ruins {
 
 /*** Footer ***/
 footer {
-  font-size: .6rem;
+  font-size: .8rem;
 }
 
 footer a:link,
@@ -401,4 +401,8 @@ footer>div>div {
 footer img {
   height: auto;
   width: 32px;
+}
+
+p.last-modified {
+  margin-top: .5rem;
 }
