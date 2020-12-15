@@ -277,8 +277,14 @@ table.rentals td {
   padding: 1rem 0;
 }
 
+#input-form form fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
 #reservation-quantity {
   display: inline-block;
+  width: 20rem;
 }
 
 #reservation-quantity-label {
