@@ -345,6 +345,15 @@ form input.submitBtn:hover {
   color: var(--nav-text-hover);
 }
 
+p.terms-of-service,
+p.terms-of-service-end {
+  padding: 1rem;
+}
+
+p.terms-of-service-end {
+  margin-bottom: 1rem;
+}
+
 /*** Main > Tours ***/
 ul.mayan-ruins {
   list-style: none;
