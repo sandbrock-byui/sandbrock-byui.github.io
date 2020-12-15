@@ -17,6 +17,7 @@ const showRentals = (rentals) => {
   for (const rental of rentals.rentals) {
     // Article
     const article = document.createElement('article');
+    article.classList.add('main-article');
 
     // Header
     const header = document.createElement('header');

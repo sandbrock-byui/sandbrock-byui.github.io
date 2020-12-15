@@ -19,7 +19,6 @@ const loadWeatherForecast = () => {
   fetch(forecastURL)
     .then(response => response.json())
     .then(forecast => {
-      console.log(forecast);
       let currentChild = 1;
 
       for (const curForecast of forecast.list) {

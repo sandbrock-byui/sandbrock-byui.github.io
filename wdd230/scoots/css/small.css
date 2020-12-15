@@ -182,17 +182,17 @@ div.call-to-action:hover {
 }
 
 /*** Main > Article ***/
-main>article>header>h2 {
+article.main-article>header>h2 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   padding: 1rem 0;
 }
 
-main>article {
+article.main-article {
   text-align: center;
 }
 
-main>article>div>picture>img {
+article.main-article>div>picture>img {
   border: 1px solid rgba(0, 0, 0, .3);
   box-shadow: 10px 7px 40px -18px rgba(0, 0, 0, 0.75);
   margin-bottom: 1rem;
@@ -200,7 +200,7 @@ main>article>div>picture>img {
   width: 100%;
 }
 
-main>article>div {
+article.main-article>div {
   padding: 1rem;
 }
 
