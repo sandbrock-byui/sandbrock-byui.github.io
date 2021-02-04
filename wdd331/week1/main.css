@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lora', serif;
@@ -6,38 +6,57 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+  background-color: black;
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
 header {
   background-color: #6495ED;
-  padding: 1rem;
+  padding: 4rem 2rem 2rem 2rem;
   text-align: right;
 }
 
 header h1 {
   color: #FAEBD7;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+header hr {
+  margin: 0;
 }
 
 header ul {
+  font-size: 1.1rem;
+  font-weight: bold;
   list-style: none;
+  margin: .5rem 0;
+}
+
+header ul li {
+  margin: 0;
+  padding: .5rem 0;
 }
 
 main {
   background-color: #FAEBD7;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 1.5rem;
 }
 
 main article {
   background-color: white;
   box-shadow: 1px 1px 2px 1px #A7A7A7;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 2rem;
 }
 
-main article:not(:nth-of-type(1)) {
+main article:nth-of-type(1) {
   margin-top: 1rem;
+}
+
+main article:last-of-type {
+  margin-bottom: 1rem;
 }
 
 a, a:visited {
@@ -50,17 +69,17 @@ a:active {
   text-decoration: underline;
 }
 
-header a, header a:visited {
+nav a, header a:visited {
   color: #FAEBD7;
   text-decoration: none;
 }
 
-header a:active {
+nav a:active {
   color: #DEB887;
   text-decoration: underline;
 }
 
-header a:hover {
+nav a:hover {
   color: white;
   text-decoration: underline;
 }
@@ -82,9 +101,56 @@ article h2 a:hover {
 
 article img {
   height: auto;
-  max-width: 131px;
+  max-width: 250px;
   width: 100%;
 }
 
+div.post-date {
+  color: gray;
+  font-size: 1.1rem;
+  margin-bottom: .7rem;
+}
+
+section.post-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+section.post-content figure {
+  text-align: center;
+}
+
+section.post-content p {
+  font-size: 1.0rem;
+}
+
 @media only screen and (min-width: 60em) {
+  body div {
+    display: grid;
+    grid-template-columns: 17rem auto;
+    max-width: 60em;
+    margin: 0 auto;
+  }
+
+  header {
+    grid-column: 1;
+    padding: 4rem 2rem 2rem 3rem;
+  }
+
+  main {
+    grid-column: 2;
+    padding: 4rem;
+  }
+
+  main article {
+    padding: 3rem;
+  }
+
+  main article:first-of-type {
+    margin-top: 0;
+  }
+
+  main article:last-of-type {
+    margin-bottom: 0;
+  }
 }
