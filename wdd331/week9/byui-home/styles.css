@@ -1282,4 +1282,11 @@ main {
   padding: 0 20px;
 }
 
+.footer-image {
+  background: url(https://www.byui.edu/prebuilt/stylenew/images/foot/taylor_graphic_fixed.png) bottom no-repeat;
+  height: 146px;
+  margin: 20px;
+  border-bottom: 1px solid #b4b3b5;
+}
+
 /*# sourceMappingURL=styles.css.map */
