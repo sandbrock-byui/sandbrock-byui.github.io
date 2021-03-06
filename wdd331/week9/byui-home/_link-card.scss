@@ -1,0 +1,22 @@
+.link-card {
+    a {
+        color: $byui-blue;
+        font-family: $font-family;
+        text-decoration: none;
+    }
+
+    figure {
+        margin: 0;
+        width: 100%;
+        border: 1px solid $med-gray;
+    }
+
+    figcaption {
+        padding: 6px 12px;
+    }
+
+    &__icon::after {
+        font-style: normal;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,47 @@
+.important-dates-panel {
+    h3 {
+        background-color: $byui-blue;
+        color: $white;
+        font-family: $font-family;
+        padding: 10px 20px;
+    }
+
+    ul {
+        margin: 0;
+        padding-left: 0;
+    }
+
+    li {
+        border-left: 1px solid $dark-gray;
+        border-right: 1px solid $dark-gray;
+        border-bottom: 1px solid $dark-gray;
+        list-style: none;
+        list-style-position: inside;
+        padding: 8px 20px;
+
+        a {
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            font-family: $font-family;
+            color: $black;
+            font-size: 13px;
+        }
+    }
+
+    &__date {
+        display: block;
+        font-weight: 700;
+        flex-basis: 25%;
+    }
+
+    &__separator {
+        display: block;
+        flex-basis: 9%;
+    }
+
+    &__description {
+        display: block;
+        flex-basis: 66%;
+    }
+}

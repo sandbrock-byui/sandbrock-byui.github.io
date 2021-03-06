@@ -1,0 +1,16 @@
+.site-header {
+    background-color: $site-header-background-color;
+    color: $site-header-color;
+    margin: 0 auto;
+    padding: 15px 0;
+    border-bottom: 1px solid darkgray;
+
+    h1 {
+        margin: 0;
+        padding-left: 85px;
+        width: calc(100% - 80px);
+        font-size: 20px;
+        font-weight: 300;
+        font-family: $font-family;
+    }
+}

@@ -1,0 +1,40 @@
+.covid-testing {
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+
+    figure {
+        display: block;
+        border: 1px solid $dark-gray;
+        border-radius: 4px;
+        margin: 0;
+        width: 100%;
+
+        img {
+            border-radius: 4px;
+            width: 100%;
+            height: auto;
+        }
+
+        figcaption {
+            font-family: $font-family;
+            padding-bottom: 20px;
+        }
+
+        .message-title {
+            font-size: 16px;
+            color: $byui-blue;
+            font-weight: 700;
+            padding: 20px 20px 0 20px;
+        }
+
+        .message-description {
+            font-size: 12px;
+            padding: 0 20px;
+        }
+
+        .message-link {
+            padding: 0 20px;
+        }
+    }
+}

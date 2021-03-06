@@ -1,0 +1,29 @@
+.resources-panel {
+    h3 {
+        background-color: $dark-gray;
+        color: $white;
+        font-family: $font-family;
+        padding: 10px 20px;
+    }
+
+    ul {
+        margin: 0;
+        padding-left: 0;
+    }
+
+    li {
+        border-left: 1px solid $dark-gray;
+        border-right: 1px solid $dark-gray;
+        border-bottom: 1px solid $dark-gray;
+        list-style: none;
+        list-style-position: inside;
+        padding: 8px 20px;
+
+        a {
+            display: block;
+            text-decoration: none;
+            font-family: $font-family;
+            color: $byui-blue;
+        }
+    }
+}
