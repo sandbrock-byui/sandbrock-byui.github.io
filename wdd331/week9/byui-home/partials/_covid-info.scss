@@ -3,6 +3,11 @@
     text-align: center;
     padding: 20px;
 
+    @media screen and (min-width: $medium-screen-size) {
+        grid-column: 1 / 2;    
+        width: 100%;    
+    }
+
     h2 {
         color: $white;
         font-family: $font-family;

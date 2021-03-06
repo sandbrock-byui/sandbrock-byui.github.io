@@ -1,3 +1,9 @@
+.event-cards {
+    @media screen and (min-width: $medium-screen-size) {
+        grid-column: 1 / 2;
+    }
+}
+
 .event-card {
     border-top: 1px solid $med-gray;
     padding: 25px 0;

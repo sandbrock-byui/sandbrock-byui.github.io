@@ -12,5 +12,10 @@
         font-size: 20px;
         font-weight: 300;
         font-family: $font-family;
+
+        @media screen and (min-width: $medium-screen-size) {
+            font-size: 30px;
+            padding-left: 20px;
+        }
     }
 }

@@ -1,7 +1,15 @@
-.covid-testing {
+.learn-more-card {
     margin-top: 20px;
     padding: 20px;
     width: 100%;
+
+    @media screen and (min-width: $medium-screen-size) {
+        padding: 0;
+        margin-top: 0;
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+        width: 100%;
+    }
 
     figure {
         display: block;

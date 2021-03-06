@@ -1,0 +1,17 @@
+.learning-outcome {
+    @media screen and (min-width: $medium-screen-size) {
+        grid-column: 1 / 2;
+    }
+
+    a {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+
+        img {
+            max-width: 616px;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
